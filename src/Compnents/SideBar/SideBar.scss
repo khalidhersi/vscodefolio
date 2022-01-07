@@ -5,14 +5,14 @@
 @media screen and (min-width: 720px) {
   .sidebar {
     position: absolute;
+    z-index: 100;
     &__menu{
-    
     top: 0;
     left: 0;
     width: 50px;
     height: 100vh;
     display: flex;
-    background: $nav-background;
+    background: $sidebar-background;
     align-items: center;
     flex-direction: column;
     justify-content: center;

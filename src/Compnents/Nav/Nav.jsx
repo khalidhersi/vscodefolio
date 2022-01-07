@@ -1,27 +1,33 @@
 import React, { useState } from "react";
 import "./Nav.scss"
-import NavBar from "../NavBar/NavBar";
 
 const Nav = () => {
-    const [showNav, setShowNav] = useState(false);
+    // const [showNav, setShowNav] = useState(false);
 
 
-    const toggleNav = () => {
-        setShowNav(!showNav);
-      };
+    // const toggleNav = () => {
+    //     setShowNav(!showNav);
+    //   };
 
     return (
             <nav className="navbar">
-                {showNav && <NavBar toggleNav={toggleNav}/>}
+                {/* {showNav && <NavBar toggleNav={toggleNav}/>} */}
                  <ul className="navbar__menu">
-                    <li><a href="#about" className="navbar__menu__item">About</a></li>
-                    <li><a href="#skills" className="navbar__menu__item">Skills</a></li>
-                    <li><a href="#projects" className="navbar__menu__item">Projects</a></li>
-                    <li><a href="#contact" className="navbar__menu__item">Contact</a></li>
+                    <li className="navbar__menu__list">
+                        <i className="nnavbar__menu__icon fab fa-react fa-spin" id="react"/>
+                        <a href="#about" className="navbar__menu__item">Skills.jsx</a>
+                    </li>
+                    <li className="navbar__menu__list">
+                        <a href="#skills" className="navbar__menu__item">About.md</a>
+                    </li>
+                    <li className="navbar__menu__list">
+                        <i className="navbar__menu__icon fab fa-sass" id="sass"/>
+                        <a href="#projects" className="navbar__menu__item">Projects.scss</a>
+                    </li>
+                    <li className="navbar__menu__list">
+                        <a href="#contact" className="navbar__menu__item">Contact.json</a>
+                    </li>
                 </ul>
-                 <div className="navbar__hamburger" onClick={toggleNav}>
-                    <i class="menuIcon fas fa-bars"></i>
-                </div>
             </nav>
     )
 }

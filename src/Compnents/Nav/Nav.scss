@@ -4,102 +4,43 @@
 .navbar {
   &__menu {
     position: fixed;
-    width: 100%;
-    padding: 100px 20px;
-    z-index: 100;
     display: flex;
     &__item {
-      color: $body-color;
       text-decoration: none;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-  }
-  &__hamburger {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0);
-    color: $body-color;
-    border-radius: 50%;
-    border: none;
-    position: fixed;
-    bottom: 87%;
-    margin: 25px;
-    z-index: 101;
-    & .closeIcon {
-      display: none;
-      padding: 10px 16px;
-      font-size: 2.8rem;
-      background-color: rgba(0, 0, 0, 0);
-    }
-    & .menuIcon {
-      padding: 12px 15px;
-      position: relative;
-      right: 10px;
-      font-size: 3rem;
-      background-color: $accent-color;
-      border-radius: 47%;
     }
   }
 }
 
-.showMenu {
-  transform: translateY(0);
-}
-
-@media screen and (max-width: 986px) {
+@media screen and (min-width: 720px) {
   .navbar {
+    z-index: 99;
     &__menu {
-      & > li {
-        margin-bottom: 50px;
-      }
-      &__item {
-        color: $body-color;
-        text-decoration: none;
-        font-size: 1.8rem;
-      }
-    }
-    &__hamburger {
-      & .closeIcon {
-        // padding: 4px 10px;
-        font-size: 3.5rem;
-      }
-      & .menuIcon {
-        // padding: 7px 10px;
-        font-size: 3.5rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 986px) {
-  .navbar {
-    &__menu {
-      justify-content: center;
-      height: 3rem;
-      padding: 0px;
-      background-color: transparent;
-      transform: translateY(0);
-      position: fixed;
-      clip-path: none;
+      height: 40px;
+      width: 100vw;
       flex-direction: row;
-      justify-content: right;
-      & > li {
-        margin-bottom: 0px;
+      justify-content: left;
+      background-color: $nav-background;
+      &__list{
+        display: flex;
+        align-items: center;
+        padding: 0 2em;
+        position: relative;
+        left: 30px;
+      }
+      &__icon{
+        font-size: 2em;
+        padding-right: 8px;
       }
       &__item {
-        background-color: $nav-background;
-        color: $font-color;
-        font-weight: 500;
-        font-size: 1.6rem;
-        padding: 0 2rem;
-        &:hover {
-          color: $accent-color;
-          transition: 0.3s;
-        }
-      }
+
     }
-    &__hamburger {
-      display: none;
+    #sass{
+      color: #C26191;
+    }
+    #react{
+      color: #00CDF2;
     }
   }
+  }
+
 }
