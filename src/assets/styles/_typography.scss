@@ -1,0 +1,43 @@
+@import './_variables.scss';
+
+$header-font: cursive;
+$body-font: 'Poppins', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: $font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid $border-color;
+}
+
+.text-accent {
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+}

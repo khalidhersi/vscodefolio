@@ -1,0 +1,22 @@
+@import './assets/styles/_variables.scss';
+@import './assets/styles/_typography.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $body-color;
+  font-family: $body-font;
+}
+
+.sections {
+  padding: 1.25rem;
+}
+

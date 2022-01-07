@@ -1,0 +1,57 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/typography';
+
+.about {
+  &__header {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  &__bio__text {
+    text-align: center;
+    line-height: 2.2rem;
+  }
+  &__bio__text:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    &__bio {
+      padding-left: 50px;
+      padding-right: 50px;
+      &__text {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    padding-top: 7rem;
+    &__bio {
+      padding: 4rem;
+      &__text {
+        padding-left: 25%;
+        padding-right: 25%;
+        text-align: center;
+        line-height: 2.2rem;
+        &:first-of-type {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__bio__text {
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/_typography';
+
+.landing {
+  #im{
+    font-size: 6rem;
+    padding: 0;
+  }
+  .landing__header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+    &__title {
+      font-size: 3rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    &__desc {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.explore__btn {
+  background-color: $body-color;
+  border: none;
+  padding: 7px 9px;
+  text-align: center;
+  &__links {
+    text-decoration: none;
+  }
+  &__cta {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+  }
+  &__arrow {
+    font-size: 1.5rem;
+    animation: down-repeat 0.8s infinite;
+  }
+}
+
+@keyframes down-repeat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    #im{
+      font-size: 8rem;
+      padding: 0;
+    }
+    .landing__header {
+      padding-bottom: 0px;
+      &__title {
+        font-size: 5rem;
+      }
+      &__desc {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .explore {
+    &__cta {
+      font-size: 2rem;
+    }
+    &__btn {
+      .fa-angle-down {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .explore__btn {
+    &__cta {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing {
+    #im{
+      font-size: 6rem;
+      padding: 0;
+    }
+    .landing__header {
+      padding-top: 50px;
+      &__title {
+        font-size: 9rem;
+      }
+      &__desc {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .explore__btn {
+    &__cta {
+      font-size: 2rem;
+    }
+    &__arrow {
+      font-size: 2rem;
+    }
+  }
+}
