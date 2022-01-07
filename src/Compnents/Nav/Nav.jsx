@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Nav.scss"
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     // const [showNav, setShowNav] = useState(false);
@@ -13,19 +14,21 @@ const Nav = () => {
             <nav className="navbar">
                 {/* {showNav && <NavBar toggleNav={toggleNav}/>} */}
                  <ul className="navbar__menu">
+                 <li className="navbar__menu__list">
+                    <i className="navbar__menu__icon fab fa-sass" id="sass"/>
+                        <Link to="/about" className="navbar__menu__item">About.scss</Link>
+                    </li>
                     <li className="navbar__menu__list">
                         <i className="nnavbar__menu__icon fab fa-react fa-spin" id="react"/>
-                        <a href="#about" className="navbar__menu__item">Skills.jsx</a>
+                        <Link to="/skills" className="navbar__menu__item">Skills.jsx</Link>
                     </li>
                     <li className="navbar__menu__list">
-                        <a href="#skills" className="navbar__menu__item">About.md</a>
+                        <i className="navbar__menu__icon fab fa-npm" id="json"/>
+                        <Link to="/projects" className="navbar__menu__item">Projects.json</Link>
                     </li>
                     <li className="navbar__menu__list">
-                        <i className="navbar__menu__icon fab fa-sass" id="sass"/>
-                        <a href="#projects" className="navbar__menu__item">Projects.scss</a>
-                    </li>
-                    <li className="navbar__menu__list">
-                        <a href="#contact" className="navbar__menu__item">Contact.json</a>
+                        <i className="navbar__menu__icon fab fa-markdown" id="markdown"/>
+                        <Link to="/contact" className="navbar__menu__item">Contact.md</Link>
                     </li>
                 </ul>
             </nav>

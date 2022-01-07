@@ -25,20 +25,30 @@
         align-items: center;
         padding: 0 2em;
         position: relative;
-        left: 30px;
+        left: 40px;
+      }
+      &__list:hover{
+        background-color: $nav-hover-background;
+        transition: 0.35s;
       }
       &__icon{
-        font-size: 2em;
-        padding-right: 8px;
+        font-size: 1.8em;
       }
       &__item {
-
+        padding-left: 8px;
     }
     #sass{
       color: #C26191;
     }
     #react{
       color: #00CDF2;
+      font-size: 2em;
+    }
+    #markdown{
+      color: #4d3016;
+    }
+    #json{
+      color: #CD0001;
     }
   }
   }

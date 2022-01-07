@@ -7,8 +7,6 @@
     position: absolute;
     z-index: 100;
     &__menu{
-    top: 0;
-    left: 0;
     width: 50px;
     height: 100vh;
     display: flex;
@@ -17,9 +15,16 @@
     flex-direction: column;
     justify-content: center;
     font-size: 2em;
+    position: fixed;
+    padding: 10px;
       &__icon {
         color: $body-color;
         text-decoration: none;
+      }
+      #home{
+        position: relative;
+        bottom: 268px;
+        font-size: 1em;
       }
   }
 }
