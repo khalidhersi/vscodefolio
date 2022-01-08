@@ -10,13 +10,17 @@ const Home = () => {
         <section className="landing sections">
             <header className="landing__header">
             <TextAnimation/>
-                <Typewriter
-                    options={{
-                        wrapperClassName: "landing__header__title",
-                        strings: ['Khalid Hersi'],
-                        autoStart: true,
-                        loop: true,
-                    }} />
+               <h2 className="landing__header__title"><Typewriter 
+                        onInit={(typewriter) => {
+                            typewriter.pauseFor(900)
+                            .typeString('Khalid Hersi')
+                              .callFunction(() => {
+                                console.log('String typed out!');
+                              })
+                              .start();
+                          }}
+                          />
+                          </h2>
                 <p className="landing__header__desc">
                     <span className="text-accent">Junior Full Stack Developer</span> based in London
                 </p>
