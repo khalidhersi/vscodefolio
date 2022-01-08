@@ -5,6 +5,7 @@ $body-font: 'Poppins', sans-serif;
 
 h1,
 h2,
+.landing__header__title,
 h3,
 h4,
 h5,
@@ -16,6 +17,7 @@ a {
 
 h1,
 h2,
+.landing__header__title,
 h3,
 h4,
 h5,
@@ -24,7 +26,8 @@ h6 {
   text-transform: uppercase;
 }
 
-h2 {
+
+.landing__header__title {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
@@ -37,7 +40,8 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  h2 {
+h2,
+.landing__header__title {
     font-size: 3.8rem;
   }
 }
