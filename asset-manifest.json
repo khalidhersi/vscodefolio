@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vscodefolio/static/css/main.bb3ee073.css",
+    "main.js": "/vscodefolio/static/js/main.243d438b.js",
+    "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
+    "index.html": "/vscodefolio/index.html",
+    "main.bb3ee073.css.map": "/vscodefolio/static/css/main.bb3ee073.css.map",
+    "main.243d438b.js.map": "/vscodefolio/static/js/main.243d438b.js.map",
+    "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb3ee073.css",
+    "static/js/main.243d438b.js"
+  ]
+}
