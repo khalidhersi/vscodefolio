@@ -2,6 +2,7 @@ import React from 'react'
 import cv from  "../../assets/images/cv.png"
 import githubIcon from  "../../assets/images/github-icons.png"
 import linkedinIcon from  "../../assets/images/linkedin-icon.png"
+
 import "./Contact.scss"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faGithub, falinkedIn } from '@fortawesome/free-brands-svg-icons'

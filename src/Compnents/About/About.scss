@@ -3,9 +3,11 @@
 
 .about {
   &__header {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    font-size: 3.3rem;
+    text-align: center;
   }
   &__bio__text {
     text-align: center;
@@ -14,44 +16,45 @@
   &__bio__text:not(:last-of-type) {
     margin-bottom: 40px;
   }
-}
+} 
 
-@media screen and (min-width: 768px) {
-  .about {
-    &__bio {
-      padding-left: 50px;
-      padding-right: 50px;
-      &__text {
-        font-size: 1.3rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 320px) {
   .about {
     padding-top: 7rem;
+    &__header {
+      font-size: 2.3rem;
+      text-align: center;
+    }
     &__bio {
-      padding: 4rem;
+      padding: 3rem;
       &__text {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 15%;
+        font-size: 1.3rem;
+        padding-right: 5%;
         text-align: center;
-        line-height: 2.2rem;
-        &:first-of-type {
-          padding-top: 50px;
-        }
       }
     }
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 520px) {
+  
   .about {
+    padding-top: 7rem;
     &__header {
-      margin-bottom: 20px;
+      font-size: 4.3rem;
+      text-align: center;
     }
-    &__bio__text {
+    &__bio {
+      padding: 3rem;
+      &__text {
+        padding-left: 20%;
+        font-size: 1.7rem;
+        padding-right: 15%;
+        text-align: center;
+      }
     }
   }
 }
+
+

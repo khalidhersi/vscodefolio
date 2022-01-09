@@ -3,9 +3,13 @@
 
 .skills {
   &__header {
-    width: 50%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+    font-size: 4rem;
+    margin-left: 0.5em;
+    text-align: center;
+    margin-top: 2rem;
   }
   &__container {
     display: flex;

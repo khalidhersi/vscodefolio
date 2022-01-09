@@ -4,8 +4,13 @@
 .projects {
   &__header {
     width: 50%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5em;
+
     margin-bottom: 30px;
+    font-size: 4em;
+    text-align: center;
   }
   &__cta {
     text-align: center;

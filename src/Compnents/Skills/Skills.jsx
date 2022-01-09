@@ -1,10 +1,18 @@
 import React from 'react'
 import "./Skills.scss"
+import Typewriter from "typewriter-effect";
 
 const Skills = () => {
     return (
         <section className="skills sections" id="skills">
-            <h2 className="skills__header">skills</h2>
+            <h2 className="skills__header"><Typewriter 
+                        onInit={(typewriter) => {
+                            typewriter.pauseFor(100)
+                            .typeString('Skills')
+                              .callFunction(() => {
+                                console.log('String typed out!');
+                              }).start();
+                            }}/></h2>
             <div className="skills__container">
             <div class="skills__container__item">
                 <i class="skills__container__item__icon fab fa-html5"></i>

@@ -1,14 +1,22 @@
-import React from 'react'
-import "./About.scss" 
+import React from 'react';
+import "./About.scss" ;
+import Typewriter from "typewriter-effect";
 
 const About = () => {
     return (
         <section className="about sections" id="about">
-            <h2 className="about__header">about</h2>
+            <h2 className="about__header"><Typewriter 
+                        onInit={(typewriter) => {
+                            typewriter.pauseFor(200)
+                            .typeString('About Me')
+                              .callFunction(() => {
+                                console.log('String typed out!');
+                              }).start();
+                            }}/></h2>
             <div className="about__bio">
             <p className="about__bio__text">
                 I’m a
-                <span className="text-accent">junior web developer</span> from London and I’ve just completed a 12 week developer course at
+                <span className="text-accent"> junior web developer</span> from London and I’ve just completed a 12 week developer course at
                 <span className="text-accent">_nology</span>.
             </p>
             <p className="about__bio__text">
