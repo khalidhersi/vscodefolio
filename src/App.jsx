@@ -1,6 +1,7 @@
 import './App.scss';
 import Nav from "./Compnents/Nav/Nav";
 import Home from './Compnents/Home/Home';
+import Education from "./Compnents/Education/Education";
 import About from "./Compnents/About/About";
 import Skills from './Compnents/Skills/Skills';
 import Projects from "./Compnents/Projects/Projects";
@@ -18,6 +19,7 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="*" element={ <Home />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
