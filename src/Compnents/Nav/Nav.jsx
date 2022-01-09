@@ -19,8 +19,11 @@ const Nav = () => {
                         <Link to="/about" className="navbar__menu__item">About.scss</Link>
                     </Link>
                     <Link to="/about" className="navbar__menu__list">
-                        <i className="nnavbar__menu__icon fab fa-react fa-spin" id="react"/>
+                        <i className="navbar__menu__icon fab fa-react fa-spin" id="react"/>
                         <Link to="/skills" className="navbar__menu__item">Skills.jsx</Link>
+                    </Link>
+                    <Link to="/" className="navbar__menu__list" id="home">
+                            <i className="navbar__menu__icon fas fa-home" />
                     </Link>
                     <Link to="/about" className="navbar__menu__list">
                         <i className="navbar__menu__icon fab fa-npm" id="json"/>

@@ -1,8 +1,13 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/typography';
 
+.sidebar{
+&__menu{
+  display: none;
+}
+}
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 520px) {
   .sidebar {
     position: absolute;
     z-index: 100;
@@ -13,18 +18,13 @@
     background: $sidebar-background;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 2em;
     position: fixed;
     padding: 10px;
       &__icon {
         color: $body-color;
         text-decoration: none;
-      }
-      #home{
-        position: relative;
-        bottom: 268px;
-        font-size: 1em;
       }
   }
 }

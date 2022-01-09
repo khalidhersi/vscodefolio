@@ -20,15 +20,14 @@
       height: 40px;
       width: 100vw;
       flex-direction: row;
-      justify-content: left;
+      justify-content: center;
       background-color: $nav-background;
       &__list{
         display: flex;
         align-items: center;
-        padding: 0 7%;
+        padding: 0 5%;
         position: relative;
-        left: 40px;
-
+        left: 1px;
       }
       &__list:hover{
         background-color: $nav-hover-background;
@@ -40,6 +39,10 @@
       &__item {
         padding-left: 8px;
         display: none;
+    }
+    #home{
+      color: $sidebar-background;
+      font-size: 1em;
     }
     #sass{
       color: #C26191;
@@ -56,6 +59,27 @@
     }
   }
   }
+
+  @media screen and (min-width: 520px){
+    .navbar{
+        &__menu{
+          justify-content: left;
+        &__list{
+        display: flex;
+        align-items: center;
+        padding: 0 2em;
+        position: relative;
+        left: 40px;
+        &__items{
+          display: none;
+        }
+      }
+    }
+  }
+  #home{
+    display: none;
+  }
+}
 
 @media screen and (min-width: 800px) {
   .navbar {

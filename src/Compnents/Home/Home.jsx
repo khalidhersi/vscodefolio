@@ -24,12 +24,6 @@ const Home = () => {
                 <p className="landing__header__desc">
                     <span className="text-accent">Junior Full Stack Developer</span> based in London
                 </p>
-                <div className="explore__btn">
-                    <a href="#about" class="explore__btn__links">
-                    <p className="explore__btn__cta text-accent">Learn More</p>
-                    <i className="explore__btn__arrow fas fa-angle-down"></i>
-                    </a>
-            </div>
             </header>
       </section>
     )

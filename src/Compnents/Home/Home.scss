@@ -1,10 +1,15 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/_typography';
 
+
 .landing {
   .landing__header {
-    height: 100vh;
+    color: $font-color;
+    height: 80vh;
     display: flex;
+    position: relative;
+    left: 0em;
+    top: 0rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,73 +18,66 @@
       padding-bottom: 1rem;
     }
     &__title {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 400;
       text-align: center;
       padding: 0px;
       &__id{
-        font-size: 6rem;
+        color: $accent-color;
+        font-size: 9.5rem;
         padding: 0;
-        font-weight: 400;
+        font-weight: 700;
+        position: relative;
+        top: 0.2em;
       }
     }
     &__desc {
-      font-size: 2rem;
+      font-size: 1.9rem;
       text-align: center;
     }
   }
 }
 
-.explore__btn {
-  background-color: $body-color;
-  border: none;
-  padding: 7px 9px;
-  text-align: center;
-  &__links {
-    text-decoration: none;
-  }
-  &__cta {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-  }
-  &__arrow {
-    font-size: 1.5rem;
-    animation: down-repeat 0.8s infinite;
+@media screen and (min-width: 520px) {
+.landing {
+  .landing__header {
+    height: 80vh;
+    display: flex;
+    position: relative;
+    left: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-size: 5rem;
+      text-align: center;
+      &__id{
+        font-size: 11rem;
+        position: relative;
+        top: 0.2em;
+      }
+    }
+    &__desc {
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 }
-
-@media screen and (min-width: 720px) {
+}
+@media screen and (min-width: 800px) {
   .landing {
     .landing__header {
-      color: $font-color;
       padding-bottom: 0px;
       &__title {
         font-size: 5rem;
-        &__cursor{
-            
-        }
         &__id{
           font-size: 13rem;
           padding: 0;
           position: relative;
-          top: 0.2em;
-          &__cursor{
-
-          }
         }
       }
       &__desc {
         font-size: 2.5rem;
-      }
-    }
-  }
-  .explore {
-    &__cta {
-      font-size: 2rem;
-    }
-    &__btn {
-      .fa-angle-down {
-        font-size: 3rem;
       }
     }
   }
