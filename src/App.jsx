@@ -18,7 +18,7 @@ function App() {
         <Nav />
         <SideBar />
         <Routes>
-          <Route path="*" element={ <Home />} />
+          <Route index element={ <Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
