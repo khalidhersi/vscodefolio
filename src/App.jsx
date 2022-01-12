@@ -8,6 +8,7 @@ import Projects from "./Compnents/Projects/Projects";
 import Contact from './Compnents/Contact/Contact';
 import Footer from './Compnents/Footer/Footer';
 import SideBar from './Compnents/SideBar/SideBar';
+import NotFoundPage from "./Compnents/NotFoundPage/NotFoundPage";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact"element={<Contact />} />
           <Route path="/footer" element={<Footer />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
     </Router>
