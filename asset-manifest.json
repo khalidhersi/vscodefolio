@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/vscodefolio/static/css/main.ab12799e.css",
-    "main.js": "/vscodefolio/static/js/main.b574bb8a.js",
+    "main.js": "/vscodefolio/static/js/main.aaea0e1d.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
     "static/media/PageNotFound.png": "/vscodefolio/static/media/PageNotFound.d2d35bd19f77536a3cc1.png",
     "index.html": "/vscodefolio/index.html",
     "main.ab12799e.css.map": "/vscodefolio/static/css/main.ab12799e.css.map",
-    "main.b574bb8a.js.map": "/vscodefolio/static/js/main.b574bb8a.js.map",
+    "main.aaea0e1d.js.map": "/vscodefolio/static/js/main.aaea0e1d.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab12799e.css",
-    "static/js/main.b574bb8a.js"
+    "static/js/main.aaea0e1d.js"
   ]
 }
