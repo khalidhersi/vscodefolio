@@ -2,6 +2,8 @@ import React from 'react'
 import "./Home.scss"
 import Typewriter from "typewriter-effect";
 import TextAnimation from '../TextAnimation/TextAnimation';
+import NameTextAnimation from "../NameTextAnimation/NameTextAnimation";
+import LastNameAnimation from '../LastNameAnimation/LastNameAnimation';
 
 const Home = () => {
 
@@ -10,19 +12,27 @@ const Home = () => {
         <section className="landing sections">
             <header className="landing__header">
             <TextAnimation/>
-               <h2 className="landing__header__title"><Typewriter 
+            <NameTextAnimation />
+            <LastNameAnimation/>
+                <p className="landing__header__desc">
+                    <span className="text-accent"><Typewriter 
                         onInit={(typewriter) => {
-                            typewriter.pauseFor(900)
-                            .typeString('Khalid Hersi')
+                            typewriter.pauseFor(2400)
+                            .typeString('Web Developer')
+                            .deleteAll()
+                            .typeString('Full-Stack Web Developer')
                               .callFunction(() => {
                                 console.log('String typed out!');
                               })
                               .start();
                           }}
-                          />
-                          </h2>
-                <p className="landing__header__desc">
-                    <span className="text-accent">Junior Full Stack Developer</span> based in London
+                          /></span><Typewriter 
+                          onInit={(typewriter) => {
+                              typewriter.pauseFor(9100)
+                              .typeString('based in London')
+                                .start();
+                            }}
+                            />
                 </p>
             </header>
       </section>

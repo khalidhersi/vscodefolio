@@ -8,4 +8,32 @@
             <a href="https://jasenscode.github.io/Calculator/" target="_blank" className="projects__card__info__links__link">Demo</a>
         </div>
     </div>
-</article> */}
+</article> 
+
+const projects = [
+    {
+        image: calculator,
+        description: this porject........ ,
+        icons: react
+        
+        } ,
+    minesweeper ,
+    punkapi ,
+    morsecode  
+    
+
+
+
+
+] 
+
+
+
+
+
+
+
+
+
+
+*/}
