@@ -2,12 +2,17 @@
 @import '../../assets/styles/typography';
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   &__header {
     display: flex;
     justify-content: center;
     margin-left: 2rem;
     text-align: center;
   }
+
 }
 
 

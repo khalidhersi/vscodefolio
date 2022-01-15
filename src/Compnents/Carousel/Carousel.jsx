@@ -34,21 +34,24 @@ const Carousel = () => {
 ]
 
   return (
-    <div className="carousel">
-      <img
-        src={leftArrow}
-        alt="left arrow"
-        onClick={handleDecrement}
-        className="carousel__arrow carousel__arrow--left"
-      />
-      <img src={projectImagesArr[counter]} alt="" className="carousel__image" />
-      <img
-        src={rightArrow}
-        alt="right arrow"
-        onClick={handleIncrement}
-        className="carousel__arrow carousel__arrow--right"
-      />
-    </div>
+    <section className="carousel__container">
+      <div className="carousel">
+        <img
+          src={leftArrow}
+          alt="left arrow"
+          onClick={handleDecrement}
+          className="carousel__arrow carousel__arrow--left"
+        />
+        <img src={projectImagesArr[counter]} alt="" className="carousel__image" />
+        
+        <img
+          src={rightArrow}
+          alt="right arrow"
+          onClick={handleIncrement}
+          className="carousel__arrow carousel__arrow--right"
+        />
+      </div>
+    </section>
   );
 };
 
