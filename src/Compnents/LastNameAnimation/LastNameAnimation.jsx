@@ -26,7 +26,7 @@ const Wrapper = styled.span`
   color: $font-color;
   font-weight: 400;
   letter-spacing: 0.5rem;
-  animation: ${moveInLeft} 1s ease-in 1.6s both;
+  animation: ${moveInLeft} 1s ease 1.6s both;
 `;
 
 export default LastNameAnimation;

@@ -1,10 +1,10 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const NameTextAnimation = (word) => {
+const AboutAnimation = (word) => {
   return (
-    <Wrapper className="landing__header__title">
-        <span >Khalid</span>
+    <Wrapper className="about__header">
+        <span >About</span>
     </Wrapper>
   );
 };
@@ -29,4 +29,4 @@ const Wrapper = styled.h2`
   animation: ${moveInRight} 1s ease 1.1s both;
 `;
 
-export default NameTextAnimation;
+export default AboutAnimation;

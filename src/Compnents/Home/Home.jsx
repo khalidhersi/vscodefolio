@@ -17,7 +17,7 @@ const Home = () => {
                 <p className="landing__header__desc">
                     <span className="text-accent"><Typewriter 
                         onInit={(typewriter) => {
-                            typewriter.pauseFor(2400)
+                            typewriter.pauseFor(2000)
                             .typeString('Web Developer')
                             .deleteAll()
                             .typeString('Full-Stack Web Developer')
@@ -28,7 +28,7 @@ const Home = () => {
                           }}
                           /></span><Typewriter 
                           onInit={(typewriter) => {
-                              typewriter.pauseFor(9100)
+                              typewriter.pauseFor(8700)
                               .typeString('based in London')
                                 .start();
                             }}

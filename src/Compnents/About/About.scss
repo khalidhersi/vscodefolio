@@ -8,9 +8,10 @@
     margin-left: 2rem;
     font-size: 3.3rem;
     text-align: center;
+    color: $accent-color;
   }
   &__bio__text {
-    text-align: center;
+    text-align: left;
     line-height: 2.2rem;
   }
   &__bio__text:not(:last-of-type) {
@@ -25,7 +26,7 @@
     right: 0.5em;
     &__header {
       font-size: 2.7rem;
-      text-align: center;
+      text-align: left;
     }
     &__bio {
       padding: 3rem;
@@ -33,7 +34,7 @@
         padding-left: 15%;
         font-size: 1.3rem;
         padding-right: 5%;
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -42,18 +43,19 @@
 @media screen and (min-width: 520px) {
   
   .about {
-    padding-top: 7rem;
+    padding-top: 5.5rem;
     &__header {
       font-size: 4.3rem;
-      text-align: center;
+      text-align: left;
     }
     &__bio {
-      padding: 3rem;
+      padding:  3.5rem 3rem;
+
       &__text {
-        padding-left: 20%;
+        padding-left: 5%;
         font-size: 1.7rem;
         padding-right: 15%;
-        text-align: center;
+        text-align: left;
       }
     }
   }

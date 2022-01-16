@@ -14,7 +14,7 @@ const TextAnimation = (word) => {
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-550rem);
+    transform: translateY(-50rem);
     }
 
     100% {
