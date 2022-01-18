@@ -12,7 +12,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/education" className="sidebar__items">
+          <Link to="/vscodefolio/education" className="sidebar__items">
             <i className="sidebar__icon fas fa-user-graduate" />
           </Link>
         </li>
