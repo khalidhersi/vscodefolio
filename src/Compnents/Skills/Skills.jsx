@@ -2,6 +2,14 @@ import React from 'react'
 import "./Skills.scss"
 import Typewriter from "typewriter-effect";
 import Html from '../Animations/SkillsAnimations/Html';
+import Css from '../Animations/SkillsAnimations/Css';
+import Scss from '../Animations/SkillsAnimations/Scss';
+import JS from '../Animations/SkillsAnimations/JS';
+import ReactA from '../Animations/SkillsAnimations/ReactA';
+import Bootstrap from '../Animations/SkillsAnimations/Bootstrap';
+import Java from '../Animations/SkillsAnimations/Java';
+import Python from '../Animations/SkillsAnimations/Python';
+
 
 const Skills = () => {
     return (
@@ -19,31 +27,25 @@ const Skills = () => {
                 <Html />
                 </div>
                 <div class="skills__container__item">
-                
+                <Css />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-sass"></i>
-                <p class="skills__container__item__desc">Sass</p>
+                <Scss />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-js"></i>
-                <p class="skills__container__item__desc">JavaScript</p>
+                <JS />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-react fa-spin"></i>
-                <p class="skills__container__item__desc">React</p>
+                <ReactA />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-java"></i>
-                <p class="skills__container__item__desc">Java</p>
+                <Java />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-bootstrap "></i>
-                <p class="skills__container__item__desc">Bootstrap</p>
+                <Bootstrap />
                 </div>
                 <div class="skills__container__item">
-                <i class="skills__container__item__icon fab fa-python"></i>
-                <p class="skills__container__item__desc">Python</p>
+                <Python />
                 </div>
             </div>
         </section>

@@ -1,18 +1,18 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const JS = () => {
+const Python = () => {
   return (
     <Wrapper className="skills__container__item">
-     <i class="skills__container__item__icon fab fa-js"></i>
-                <p class="skills__container__item__desc">JavaScript</p>
+     <i class="skills__container__item__icon fab fa-python"></i>
+                <p class="skills__container__item__desc">Python</p>
     </Wrapper>
   );
 };
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-80rem);
+    transform: translateY(-140rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1.4s ease-in 1.1s both;
+  animation: ${moveInDown} 2.2s ease-in 1.1s both;
 `;
 
-export default JS;
+export default Python;

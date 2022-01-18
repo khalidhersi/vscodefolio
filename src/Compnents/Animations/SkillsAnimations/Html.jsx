@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1s ease-in 0.3s both;
+  animation: ${moveInDown} 0.8s ease-in 1.1s both;
 `;
 
 export default Html;
