@@ -2,6 +2,7 @@
 @import '../../assets/styles/typography';
 
 .about {
+  height: 100vh;
   &__header {
     display: flex;
     justify-content: center;
@@ -47,9 +48,13 @@
     &__header {
       font-size: 4.3rem;
       text-align: left;
+      position: relative;
+      bottom: 0.2em;
     }
     &__bio {
       padding:  3.5rem 3rem;
+      position: relative;
+      bottom: 2em;
 
       &__text {
         padding-left: 5%;

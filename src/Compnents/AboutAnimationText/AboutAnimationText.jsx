@@ -25,7 +25,7 @@ const AboutAnimationText = () => {
 const moveInRight = keyframes`
     0% {
     opacity: 0;
-    transform: translateX(70rem);
+    transform: translateX(60rem);
     }
 
     100% {
@@ -39,7 +39,7 @@ const Wrapper = styled.h2`
   font-size: 6rem;
   color: $font-color;
   text-transform: none;
-  animation: ${moveInRight} 1.9s ease-out 1.9s both;
+  animation: ${moveInRight} 1.3s ease-out 1.9s both;
 `;
 
 export default AboutAnimationText;

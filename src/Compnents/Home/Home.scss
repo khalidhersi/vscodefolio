@@ -3,6 +3,8 @@
 
 
 .landing {
+  position: relative;
+    top: 2.3em;
   .landing__header {
     color: $font-color;
     height: 80vh;
@@ -36,6 +38,13 @@
       font-size: 1.9rem;
       text-align: center;
     }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .landing {
+    position: relative;
+    top: 0;
   }
 }
 

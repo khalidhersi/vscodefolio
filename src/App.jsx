@@ -5,7 +5,6 @@ import Education from "./Compnents/Education/Education";
 import About from "./Compnents/About/About";
 import Skills from './Compnents/Skills/Skills';
 import Projects from "./Compnents/Projects/Projects";
-import Contact from './Compnents/Contact/Contact';
 import Footer from './Compnents/Footer/Footer';
 import SideBar from './Compnents/SideBar/SideBar';
 import NotFoundPage from "./Compnents/NotFoundPage/NotFoundPage";
@@ -24,7 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact"element={<Contact />} />
+          <Route path="/NotFoundPage"element={<NotFoundPage />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

@@ -9,6 +9,7 @@ const About = () => {
   return (
     <section className="about sections" id="about">
 <h2 className="about__header">
+  {/* <AboutAnimation/> */}
         <Typewriter
           onInit={(typewriter) => {
             typewriter
