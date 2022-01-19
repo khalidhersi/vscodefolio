@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vscodefolio/static/css/main.afee508b.css",
+    "main.css": "/vscodefolio/static/css/main.e8d7aeeb.css",
     "main.js": "/vscodefolio/static/js/main.24c30b5c.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
     "static/media/punkapi.png": "/vscodefolio/static/media/punkapi.8ecfa1a4400603bd4e23.png",
@@ -9,12 +9,12 @@
     "static/media/morsecode.png": "/vscodefolio/static/media/morsecode.298c74f535d9cbdaa11b.png",
     "static/media/PageNotFound.png": "/vscodefolio/static/media/PageNotFound.d2d35bd19f77536a3cc1.png",
     "index.html": "/vscodefolio/index.html",
-    "main.afee508b.css.map": "/vscodefolio/static/css/main.afee508b.css.map",
+    "main.e8d7aeeb.css.map": "/vscodefolio/static/css/main.e8d7aeeb.css.map",
     "main.24c30b5c.js.map": "/vscodefolio/static/js/main.24c30b5c.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afee508b.css",
+    "static/css/main.e8d7aeeb.css",
     "static/js/main.24c30b5c.js"
   ]
 }
