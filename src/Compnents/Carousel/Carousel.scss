@@ -1,6 +1,7 @@
 @import '../../assets/styles/variables';
 
-
+@media screen and (min-width: 320px){
+  
 .carousel__container{
   position: relative;
   top: 1em;
@@ -12,7 +13,6 @@
   background-color: $font-color;
   border: 4px solid $accent-color;
   border-radius: 1000em;
-
   position: relative;
   left: 0.4em;
   &__image {
@@ -31,32 +31,15 @@
       cursor: pointer;
     }
   }
-}
-
-.artist-tile {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-
-  box-shadow: 0px 10px 20px rgba(black, 0.25);
-
-  &__img {
-    width: 100%;
-  }
-
   &__content {
     position: absolute;
     z-index: 1;
     color: $font-color;
-    border-radius: 10000em;
 
-    & > * {
-      margin: 10px 0;
-    }
-
+    
     &--button {
-      bottom: 20px;
-      left: 20px;
+      bottom: 0.9em;
+      left: 10.3rem;
     }
 
     &--text {
@@ -66,33 +49,22 @@
       overflow-y: auto;
       background: rgba(black, 0.8);
       white-space: pre-line;
-    }
-  }
-
-  &__cross {
+      font-weight: bold;
+      font-size: 1.5rem;
+    } 
+    &__cross {
     height: 25px;
     width: 25px;
-    position: absolute;
+    position: relative;
+    width: fit-content;
     right: 20px;
     top: 15px;
   }
+  }
 
-  &__heading {
-    margin: 20px 0;
-    font-size: 25px;
-  }
-  // OVERLAY
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(black, 0.5);
-  }
+ 
 }
-
+}
 
 
 @media screen and (min-width: 520px) {

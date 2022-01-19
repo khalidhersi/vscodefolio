@@ -80,8 +80,7 @@ const Carousel = () => {
 
 
   const buttonJSX = (
-    <div className="artist-tile__content artist-tile__content--button">
-      <h3 className="artist-tile__heading">Find Out More</h3>
+    <div className="carousel__content carousel__content--button">
       <div onClick={handleClick}>
         <Button buttonText={"Find out more"} isSecondary={true} />
       </div>
@@ -89,9 +88,9 @@ const Carousel = () => {
   );
 
   const textJSX = (
-    <div className="artist-tile__content artist-tile__content--text">
-      <img src={whiteCross} className="artist-tile__cross" onClick={handleClick} alt="Close text" />
-      <h3 className="artist-tile__heading">{projectInfoArr[counter].title}</h3>
+    <div className="carousel__content carousel__content--text">
+      <img src={whiteCross} className="carousel___cross" onClick={handleClick} alt="Close text" />
+      <h3 className="carousel___heading">{projectInfoArr[counter].title}</h3>
       <p>{projectInfoArr[counter].description}</p>
     </div>
   );
