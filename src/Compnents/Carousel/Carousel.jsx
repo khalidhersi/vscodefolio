@@ -5,7 +5,8 @@ import rightArrow from "../../assets/images/right-arrow.png";
 import calculator from "../../assets/images/Calculator.png" 
 import minesweeper from "../../assets/images/minesweeper.png" 
 import punkapi from "../../assets/images/punkapi.png" 
-import morsecode from"../../assets/images/morsecode.png"    
+import morsecode from"../../assets/images/morsecode.png"   
+import clientProject from "../../assets/images/client-project.png" 
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -30,7 +31,8 @@ const Carousel = () => {
     calculator ,
     minesweeper ,
     punkapi ,
-    morsecode  
+    morsecode ,
+    clientProject
 ]
 
   return (
