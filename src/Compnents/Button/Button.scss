@@ -1,0 +1,20 @@
+@import "../../assets/styles/variables";
+
+.button {
+  min-width: 80px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  
+  right: 2em;
+}
+
+.primary {
+  background-color: transparent;
+  border: 2px solid $font-color;
+}
+
+.secondary {
+  background-color: $accent-color;
+}
