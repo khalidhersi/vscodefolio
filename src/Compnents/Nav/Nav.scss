@@ -4,7 +4,6 @@
 .navbar {
   z-index: 1000;
   &__menu {
-    position: fixed;
     display: flex;
     &__list{
       text-decoration: none;

@@ -1,3 +1,5 @@
+ @import "../../assets/styles/variables.scss";
+ 
  .error__container {
     height: 100vh;
     display: flex;
@@ -9,6 +11,9 @@
     bottom: 8em;
     right: 0em;
 
+    h2{
+      color: $accent-color;
+    }
     &__image {
       width: 49vh;
       height: 32vh;

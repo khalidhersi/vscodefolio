@@ -2,6 +2,7 @@
 @import '../../assets/styles/typography';
 
 .sidebar{
+  z-index: 100001;
 &__menu{
   display: none;
 }
@@ -10,7 +11,8 @@
 @media screen and (min-width: 520px) {
   .sidebar {
     position: absolute;
-    z-index: 100;
+    top: 1px;
+    z-index: 100001;
     &__menu{
     width: 50px;
     height: 100vh;
