@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/vscodefolio/static/css/main.e8d7aeeb.css",
-    "main.js": "/vscodefolio/static/js/main.24c30b5c.js",
+    "main.css": "/vscodefolio/static/css/main.a7c904df.css",
+    "main.js": "/vscodefolio/static/js/main.b8f26372.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
+    "static/media/client-project.png": "/vscodefolio/static/media/client-project.ae8444141ff81b11e0bb.png",
     "static/media/punkapi.png": "/vscodefolio/static/media/punkapi.8ecfa1a4400603bd4e23.png",
+    "static/media/ear-worm.png": "/vscodefolio/static/media/ear-worm.f33403d63808ea15c339.png",
     "static/media/Calculator.png": "/vscodefolio/static/media/Calculator.a52b28704954f08ab4ff.png",
     "static/media/minesweeper.png": "/vscodefolio/static/media/minesweeper.bf07977924ca70bf49b4.png",
     "static/media/morsecode.png": "/vscodefolio/static/media/morsecode.298c74f535d9cbdaa11b.png",
     "static/media/PageNotFound.png": "/vscodefolio/static/media/PageNotFound.d2d35bd19f77536a3cc1.png",
     "index.html": "/vscodefolio/index.html",
-    "main.e8d7aeeb.css.map": "/vscodefolio/static/css/main.e8d7aeeb.css.map",
-    "main.24c30b5c.js.map": "/vscodefolio/static/js/main.24c30b5c.js.map",
+    "main.a7c904df.css.map": "/vscodefolio/static/css/main.a7c904df.css.map",
+    "main.b8f26372.js.map": "/vscodefolio/static/js/main.b8f26372.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8d7aeeb.css",
-    "static/js/main.24c30b5c.js"
+    "static/css/main.a7c904df.css",
+    "static/js/main.b8f26372.js"
   ]
 }
