@@ -21,8 +21,8 @@
 
 @media screen and (min-width: 320px) {
   .projects {
-    padding-top: 7rem;
     position: relative;
+    top: 1.7rem;
     right: 0.5em;
     &__header {
       position: relative;
@@ -36,7 +36,7 @@
 @media screen and (min-width: 520px) {
   
   .projects {
-    padding-top: 7rem;
+    top: 1.7rem;
     &__header {
       font-size: 4.3rem;
       text-align: center;
@@ -47,9 +47,8 @@
 
 @media screen and (min-width: 800px) {
   .projects {
-    padding-bottom: 0px;
     &__header {
-      font-size: 7rem;
+      font-size: 6rem;
       position: relative;
       bottom: 2rem;
       }
