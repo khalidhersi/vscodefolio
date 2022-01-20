@@ -1,173 +1,161 @@
-@import '../../assets/styles/variables';
+@import "../../assets/styles/variables";
 
-@media screen and (min-width: 320px){
-  
-.carousel__container{
-  position: relative;
-  top: 1em;
-.carousel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: $font-color;
-  border: 4px solid $accent-color;
-  border-radius: 1000em;
-  position: relative;
-  left: 0.4em;
-  &__image {
-    box-shadow: 0px 10px 20px rgba($body-color, 0.25);
-    display: block;
-    width: 50%;
-    border-radius: 15px;
-    margin: 0 10px;
-  }
-
-  &__arrow {
-    display: block;
-    height: 30px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &__content {
-    position: absolute;
-    z-index: 1;
-    color: $font-color;
-    
-    &--button {
-      bottom: 0.9em;
-      font-size: 2em;
-      &__container{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        position: fixed;
-        right: 0%;
-      }
-    }
-
-    &--text {
-      height: 100%;
-      padding: 0px 20px;
-      top: 0;
-      right: 0.05em;
-      border-radius: 1000em;
-      overflow-y: auto;
-      background: rgba(black, 0.8);
-      white-space: pre-line;
+@media screen and (min-width: 320px) {
+  .carousel__container {
+    position: relative;
+    top: 1em;
+    .carousel {
       display: flex;
-      flex-direction: column;
-      text-align: center;
-&__heading{
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  top: 2em;
-  color: $accent-color;
-}
-&__description{
-  padding-top: 4em;
-  font-size: 1em;
-}
-    }
-      &__cross {
-        position: relative;
-        top: 1em;
-        left: 46%;
-    height: 25px;
-    width: 25px;
-    position: relative;
-    width: fit-content;
-    
-  }
-  }
-
- 
-}
-}
-
-
-@media screen and (min-width: 520px) {
-  .carousel__container{
-    display: flex;
-    justify-content: center;
-  .carousel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    width: 25rem;
-    position: relative;
-    bottom: 2em;
-
-    &__image {
-      box-shadow: 0px 10px 20px rgba($body-color, 0.25);
-      display: block;
-      width: 17rem;
-      border-radius: 15px;
-      margin: 0 10px;
-    }
-  
-    &__arrow {
-      display: block;
-      height: 30px;
-  
-      &:hover {
-        cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: $font-color;
+      border: 4px solid $accent-color;
+      border-radius: 1000em;
+      position: relative;
+      left: 0.4em;
+      &__image {
+        box-shadow: 0px 10px 20px rgba($body-color, 0.25);
+        display: block;
+        width: 50%;
+        border-radius: 15px;
+        margin: 0 10px;
       }
-    }
 
-    &__content {
-  
-      
-      &--button {
-        bottom: 0.9em;
-        left: 10.3rem;
-        &__container{
-          width: 100%;
-          position: relative;
-          bottom: 1.7em;
-          right: 1.2em;
+      &__arrow {
+        display: block;
+        height: 30px;
+
+        &:hover {
+          cursor: pointer;
         }
       }
-  
-      &--text {
-        height: 100%;
-        padding: 0px 20px;
-        top: 0;
-        right: 0;
-      border-radius: 2em;
-        overflow-y: auto;
-        background: rgba(black, 0.8);
-        &__heading{
-          font-size: 1.8rem;
-          font-weight: bold;
+      &__content {
+        position: absolute;
+        z-index: 1;
+        color: $font-color;
+
+        &--button {
+          bottom: 0.9em;
+          font-size: 2em;
+          &__container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: fixed;
+            right: 0%;
+          }
+        }
+
+        &--text {
+          height: 100%;
+          padding: 0px 20px;
+          top: 0;
+          right: 0.05em;
+          border-radius: 1000em;
+          overflow-y: auto;
+          background: rgba(black, 0.8);
+          white-space: pre-line;
+          display: flex;
+          flex-direction: column;
           text-align: center;
-          position: relative;
-          top: 0.9em;
-          color: $accent-color;
+          &__heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 2em;
+            color: $accent-color;
+          }
+          &__description {
+            padding-top: 4em;
+            font-size: 1em;
+          }
         }
-        &__description{
+        &__cross {
           position: relative;
-          top: 1.9em;
-          font-size: 1.5rem;
-
+          top: 1em;
+          left: 46%;
+          height: 25px;
+          width: 25px;
+          position: relative;
+          width: fit-content;
         }
-      } 
-      &__cross {
-        position: relative;
-        left: 20em;
-        
       }
     }
-  
-   
-  }
   }
 
-  }    
+  @media screen and (min-width: 520px) {
+    .carousel__container {
+      display: flex;
+      justify-content: center;
+      .carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        width: 25rem;
+        position: relative;
+        bottom: 2em;
+
+        &__image {
+          box-shadow: 0px 10px 20px rgba($body-color, 0.25);
+          display: block;
+          width: 17rem;
+          border-radius: 15px;
+          margin: 0 10px;
+        }
+
+        &__arrow {
+          display: block;
+          height: 30px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &__content {
+          &--button {
+            bottom: 0.9em;
+            left: 10.3rem;
+            &__container {
+              width: 100%;
+              position: relative;
+              bottom: 1.7em;
+              right: 1.2em;
+            }
+          }
+
+          &--text {
+            height: 100%;
+            padding: 0px 20px;
+            top: 0;
+            right: 0;
+            border-radius: 2em;
+            overflow-y: auto;
+            background: rgba(black, 0.8);
+            &__heading {
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-align: center;
+              position: relative;
+              top: 0.9em;
+              color: $accent-color;
+            }
+            &__description {
+              position: relative;
+              top: 1.9em;
+              font-size: 1.5rem;
+            }
+          }
+          &__cross {
+            position: relative;
+            left: 20em;
+          }
+        }
+      }
+    }
+  }
 }
