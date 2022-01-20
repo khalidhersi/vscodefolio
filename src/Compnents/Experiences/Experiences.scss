@@ -1,0 +1,41 @@
+@import "../../assets/styles/variables";
+
+@media screen and (min-width: 320px) {
+  .experiences {
+      text-align: left;
+      position: relative;
+      top: 4em;
+      left: 5em;
+    color: $font-color;
+    overflow-y: scroll;
+    &__title {
+    }
+    &__list { 
+      &__ltems {
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+    .experiences {
+      &__title {
+      }
+      &__list {
+        &__ltems {
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .experiences {
+      &__title {
+      }
+      &__list {
+        &__ltems {
+        }
+      }
+    }
+  }
+  

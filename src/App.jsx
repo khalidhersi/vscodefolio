@@ -1,7 +1,7 @@
 import "./App.scss";
 import Nav from "./Compnents/Nav/Nav";
 import Home from "./Compnents/Home/Home";
-import Education from "./Compnents/Education/Education";
+import Experiences from "./Compnents/Experiences/Experiences";
 import About from "./Compnents/About/About";
 import Skills from "./Compnents/Skills/Skills";
 import Projects from "./Compnents/Projects/Projects";
@@ -18,7 +18,7 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="/vscodefolio" element={<Home />} />
-          <Route path="/vscodefolio/education" element={<Education />} />
+          <Route path="/vscodefolio/Experiences" element={<Experiences />} />
           <Route path="/vscodefolio/about" element={<About />} />
           <Route path="/vscodefolio/skills" element={<Skills />} />
           <Route path="/vscodefolio/projects" element={<Projects />} />
