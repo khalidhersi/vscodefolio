@@ -53,29 +53,32 @@
       height: 100%;
       padding: 0px 20px;
       top: 0;
+      right: 0.05em;
+      border-radius: 1000em;
       overflow-y: auto;
       background: rgba(black, 0.8);
       white-space: pre-line;
-      font-size: 1.1rem;
       display: flex;
       flex-direction: column;
+      text-align: center;
 &__heading{
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: 0.4em;
+  top: 1.4em;
+  color: $accent-color;
 }
 &__description{
   position: relative;
-  top: 0.5em;
+  top: 2.5em;
+  font-size: 1.2em;
 }
-
     }
       &__cross {
         position: relative;
         top: 1em;
-        right: 0.5em;
+        left: 9.7em;
     height: 25px;
     width: 25px;
     position: relative;
@@ -127,6 +130,9 @@
         left: 10.3rem;
         &__container{
           width: 100%;
+          position: relative;
+          bottom: 1.7em;
+          right: 1.2em;
         }
       }
   
@@ -134,14 +140,30 @@
         height: 100%;
         padding: 0px 20px;
         top: 0;
+        right: 0;
+      border-radius: 2em;
         overflow-y: auto;
         background: rgba(black, 0.8);
-        font-weight: bold;
-        font-size: 1.5rem;
+        &__heading{
+          font-size: 1.8rem;
+          font-weight: bold;
+          text-align: center;
+          position: relative;
+          top: 0.9em;
+          color: $accent-color;
+        }
+        &__description{
+          position: relative;
+          top: 1.9em;
+          font-size: 1.5rem;
+
+        }
       } 
       &__cross {
-
-    }
+        position: relative;
+        left: 10%;
+        
+      }
     }
   
    
