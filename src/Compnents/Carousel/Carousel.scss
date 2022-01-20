@@ -66,19 +66,18 @@
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: 1.4em;
+  top: 2em;
   color: $accent-color;
 }
 &__description{
-  position: relative;
-  top: 2.5em;
-  font-size: 1.2em;
+  padding-top: 4em;
+  font-size: 1em;
 }
     }
       &__cross {
         position: relative;
         top: 1em;
-        left: 9.7em;
+        left: 46%;
     height: 25px;
     width: 25px;
     position: relative;
@@ -161,7 +160,7 @@
       } 
       &__cross {
         position: relative;
-        left: 10%;
+        left: 20em;
         
       }
     }
