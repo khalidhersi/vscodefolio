@@ -54,21 +54,21 @@ const Carousel = () => {
       title: "Ear Worm React App",
       description:
         "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
-    },
+    }
     ,
     {
       image: punkApi,
       title: "Punk API",
       description:
         "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info.",
-    },
+    }
     ,
     {
       image: morseCode,
       title: "Morse Code Translator",
       description:
         "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
-    },
+    }
     ,
     {
       image: clientProject,
