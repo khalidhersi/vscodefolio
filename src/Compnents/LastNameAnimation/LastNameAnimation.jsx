@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 const LastNameAnimation = () => {
   return (
     <Wrapper className="landing__header__title last--name">
-        <span > Hersi</span>
+      <span> Hersi</span>
     </Wrapper>
   );
 };

@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 const NameTextAnimation = (word) => {
   return (
     <Wrapper className="landing__header__title">
-        <span >Khalid</span>
+      <span>Khalid</span>
     </Wrapper>
   );
 };

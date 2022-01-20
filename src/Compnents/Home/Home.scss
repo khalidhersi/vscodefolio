@@ -1,10 +1,9 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/_typography';
-
+@import "../../assets/styles/variables";
+@import "../../assets/styles/_typography";
 
 .landing {
   position: relative;
-    top: 2.3em;
+  top: 2.3em;
   .landing__header {
     color: $font-color;
     height: 80vh;
@@ -25,7 +24,7 @@
       font-weight: 400;
       text-align: center;
       padding: 0px;
-      &__id{
+      &__id {
         color: $accent-color;
         font-size: 9.5rem;
         padding: 0;
@@ -49,30 +48,30 @@
 }
 
 @media screen and (min-width: 520px) {
-.landing {
-  .landing__header {
-    height: 80vh;
-    display: flex;
-    position: relative;
-    left: 1em;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__title {
-      font-size: 5rem;
-      text-align: center;
-      &__id{
-        font-size: 11rem;
-        position: relative;
-        top: 0.2em;
+  .landing {
+    .landing__header {
+      height: 80vh;
+      display: flex;
+      position: relative;
+      left: 1em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        font-size: 5rem;
+        text-align: center;
+        &__id {
+          font-size: 11rem;
+          position: relative;
+          top: 0.2em;
+        }
+      }
+      &__desc {
+        font-size: 2.5rem;
+        text-align: center;
       }
     }
-    &__desc {
-      font-size: 2.5rem;
-      text-align: center;
-    }
   }
-}
 }
 @media screen and (min-width: 800px) {
   .landing {
@@ -80,7 +79,7 @@
       padding-bottom: 0px;
       &__title {
         font-size: 5rem;
-        &__id{
+        &__id {
           font-size: 13rem;
           padding: 0;
           position: relative;

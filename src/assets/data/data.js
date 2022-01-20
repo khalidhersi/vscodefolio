@@ -1,5 +1,5 @@
-
-{/* <article class="project project-one" data-aos="fade-right">
+{
+  /* <article class="project project-one" data-aos="fade-right">
     <img class="project-image-one" src="./assets/allLights.jpg" alt="project-photo">
     <div class="project-description end">
         <p><b>AllLights - shopping cart</b></p>
@@ -36,4 +36,5 @@ const projects = [
 
 
 
-*/}
+*/
+}

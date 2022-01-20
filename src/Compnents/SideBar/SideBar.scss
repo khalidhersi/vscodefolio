@@ -1,11 +1,11 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/typography';
+@import "../../assets/styles/variables";
+@import "../../assets/styles/typography";
 
-.sidebar{
+.sidebar {
   z-index: 100001;
-&__menu{
-  display: none;
-}
+  &__menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 520px) {
@@ -13,22 +13,21 @@
     position: absolute;
     top: 1px;
     z-index: 100001;
-    &__menu{
-    width: 50px;
-    height: 100vh;
-    display: flex;
-    background: $sidebar-background;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 2em;
-    position: fixed;
-    padding: 10px;
+    &__menu {
+      width: 50px;
+      height: 100vh;
+      display: flex;
+      background: $sidebar-background;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 2em;
+      position: fixed;
+      padding: 10px;
       &__icon {
         color: $body-color;
         text-decoration: none;
       }
+    }
   }
 }
-}
-

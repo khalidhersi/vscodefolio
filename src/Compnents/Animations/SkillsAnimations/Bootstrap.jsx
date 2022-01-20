@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const Bootstrap = () => {
   return (
     <Wrapper className="skills__container__item">
-     <i class="skills__container__item__icon fab fa-bootstrap "></i>
-                <p class="skills__container__item__desc">Bootstrap</p>
+      <i class="skills__container__item__icon fab fa-bootstrap "></i>
+      <p class="skills__container__item__desc">Bootstrap</p>
     </Wrapper>
   );
 };

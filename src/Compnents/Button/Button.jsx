@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = props => {
+const Button = (props) => {
   const { buttonText, isSecondary } = props;
 
   let buttonStyle = "button";

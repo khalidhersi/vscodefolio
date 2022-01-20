@@ -1,69 +1,68 @@
- @import "../../assets/styles/variables.scss";
- 
- .error__container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    bottom: 8em;
-    right: 0em;
+@import "../../assets/styles/variables.scss";
 
-    h2{
-      color: $accent-color;
-    }
-    &__image {
+.error__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 8em;
+  right: 0em;
+
+  h2 {
+    color: $accent-color;
+  }
+  &__image {
+    width: auto;
+    height: 32vh;
+    &__reflection {
+      position: absolute;
+      top: 32em;
       width: auto;
       height: 32vh;
+      transform: rotate(0.5turn);
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .error__container {
+    position: relative;
+    bottom: 7em;
+    left: 1em;
+    &__image {
+      width: auto;
+      height: 39vh;
+      position: relative;
+      top: 0.9em;
+      right: 0.5em;
       &__reflection {
         position: absolute;
-        top: 32em;
+        top: 36em;
         width: auto;
-        height: 32vh;
+        height: 39vh;
         transform: rotate(0.5turn);
       }
     }
   }
-
-    
-@media screen and (min-width: 520px) {
-    .error__container {
-        position: relative;
-        bottom: 7em;
-        left: 1em;
-      &__image {
-        width: auto;
-        height: 39vh;
-        position: relative;
-        top: 0.9em;
-        right: 0.5em;
-        &__reflection {
-            position: absolute;
-            top: 36em;
-            width: auto;
-            height: 39vh;
-            transform: rotate(0.5turn);
-          }
-        }
-    }
-  }
+}
 
 @media screen and (min-width: 800px) {
-    .error__container {
-        position: relative;
-        bottom: 0.8em;
-        left: 1em;
-      &__image {
-        width: auto;
-        height: 66vh;
-        position: relative;
-        top: 0.9em;
-        right: 0.5em;
-        &__reflection {
-            display: none;
-          }
+  .error__container {
+    position: relative;
+    bottom: 0.8em;
+    left: 1em;
+    &__image {
+      width: auto;
+      height: 66vh;
+      position: relative;
+      top: 0.9em;
+      right: 0.5em;
+      &__reflection {
+        display: none;
       }
     }
   }
+}

@@ -1,11 +1,11 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/typography';
+@import "../../assets/styles/variables";
+@import "../../assets/styles/typography";
 
 .navbar {
   z-index: 1000;
   &__menu {
     display: flex;
-    &__list{
+    &__list {
       text-decoration: none;
     }
     &__item {
@@ -22,107 +22,106 @@
       flex-direction: row;
       justify-content: center;
       background-color: $nav-background;
-      &__list{
+      &__list {
         display: flex;
         align-items: center;
         padding: 0 5%;
         position: relative;
         left: 1px;
       }
-      &__list:hover{
+      &__list:hover {
         background-color: $nav-hover-background;
         transition: 0.35s;
       }
-      &__icon{
+      &__icon {
         font-size: 1.8em;
       }
       &__item {
         padding-left: 8px;
         display: none;
+      }
+      #home {
+        color: $sidebar-background;
+        font-size: 1em;
+      }
+      #sass {
+        color: #c26191;
+      }
+      #react {
+        color: #00cdf2;
+        font-size: 2em;
+      }
+      #markdown {
+        color: #4d3016;
+      }
+      #json {
+        color: #cd0001;
+      }
     }
-    #home{
-      color: $sidebar-background;
-      font-size: 1em;
-    }
-    #sass{
-      color: #C26191;
-    }
-    #react{
-      color: #00CDF2;
-      font-size: 2em;
-    }
-    #markdown{
-      color: #4d3016;
-    }
-    #json{
-      color: #CD0001;
-    }
-  }
   }
 
-  @media screen and (min-width: 520px){
-    .navbar{
-        &__menu{
-          justify-content: left;
-        &__list{
-        display: flex;
-        align-items: center;
-        padding: 0 2em;
-        position: relative;
-        left: 40px;
-        &__items{
-          display: none;
+  @media screen and (min-width: 520px) {
+    .navbar {
+      &__menu {
+        justify-content: left;
+        &__list {
+          display: flex;
+          align-items: center;
+          padding: 0 2em;
+          position: relative;
+          left: 40px;
+          &__items {
+            display: none;
+          }
+        }
+      }
+    }
+    #home {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .navbar {
+      z-index: 1000;
+      &__menu {
+        height: 40px;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: left;
+        background-color: $nav-background;
+        &__list {
+          display: flex;
+          align-items: center;
+          padding: 0 2em;
+          position: relative;
+          left: 40px;
+        }
+        &__list:hover {
+          background-color: $nav-hover-background;
+          transition: 0.35s;
+        }
+        &__icon {
+          font-size: 1.8em;
+        }
+        &__item {
+          padding-left: 8px;
+          display: flex;
+        }
+        #sass {
+          color: #c26191;
+        }
+        #react {
+          color: #00cdf2;
+          font-size: 2em;
+        }
+        #markdown {
+          color: #4d3016;
+        }
+        #json {
+          color: #cd0001;
         }
       }
     }
   }
-  #home{
-    display: none;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .navbar {
-    z-index: 1000;
-    &__menu {
-      height: 40px;
-      width: 100vw;
-      flex-direction: row;
-      justify-content: left;
-      background-color: $nav-background;
-      &__list{
-        display: flex;
-        align-items: center;
-        padding: 0 2em;
-        position: relative;
-        left: 40px;
-      }
-      &__list:hover{
-        background-color: $nav-hover-background;
-        transition: 0.35s;
-      }
-      &__icon{
-        font-size: 1.8em;
-      }
-      &__item {
-        padding-left: 8px;
-        display: flex;
-    }
-    #sass{
-      color: #C26191;
-    }
-    #react{
-      color: #00CDF2;
-      font-size: 2em;
-    }
-    #markdown{
-      color: #4d3016;
-    }
-    #json{
-      color: #CD0001;
-    }
-  }
-  }
-
-}
 }

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Education = () => {
-    return (
-        <div>
-            education page
-        </div>
-    )
-}
+  return <div>education page</div>;
+};
 
-export default Education
+export default Education;

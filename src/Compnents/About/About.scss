@@ -1,5 +1,5 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/typography';
+@import "../../assets/styles/variables";
+@import "../../assets/styles/typography";
 
 .about {
   height: 100vh;
@@ -18,7 +18,7 @@
   &__bio__text:not(:last-of-type) {
     margin-bottom: 40px;
   }
-} 
+}
 
 @media screen and (min-width: 320px) {
   .about {
@@ -42,7 +42,6 @@
 }
 
 @media screen and (min-width: 520px) {
-  
   .about {
     padding-top: 5.5rem;
     &__header {
@@ -52,7 +51,7 @@
       bottom: 0.2em;
     }
     &__bio {
-      padding:  3.5rem 3rem;
+      padding: 3.5rem 3rem;
       position: relative;
       bottom: 2em;
 
@@ -65,5 +64,3 @@
     }
   }
 }
-
-

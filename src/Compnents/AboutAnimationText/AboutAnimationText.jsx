@@ -3,22 +3,29 @@ import styled, { keyframes } from "styled-components";
 
 const AboutAnimationText = () => {
   return (
-    <Wrapper >
-        <p className="about__bio__text">
-                I’m a
-                <span className="text-accent">  junior web developer</span> from London and I’ve just completed a 12 week developer course at
-                <span className="text-accent"> _nology</span>.
-                I’m on the lookout for a <span className="text-accent"> challenging tech role</span>, which will test my skills and help me develop
-                them further.
-            </p>
-            <p className="about__bio__text">
-                During my time at <span className="text-accent"> _nology</span> I was able to test my abilities and apply all the skills I learnt to complete Projects.
-                I was able to complete a client project for the <span className="text-accent"> Orchestra of the Age of Enlightenment </span>. 
-            </p>
-            <p className="about__bio__text">
-            Working in an agile team compelting sprints week to week
-                gave me an insight on the avaergae day of a <span className="text-accent">  Web-develpoer. </span>
-            </p>
+    <Wrapper>
+      <p className="about__bio__text">
+        I’m a<span className="text-accent"> junior web developer</span> from
+        London and I’ve just completed a 12 week developer course at
+        <span className="text-accent"> _nology</span>. I’m on the lookout for a{" "}
+        <span className="text-accent"> challenging tech role</span>, which will
+        test my skills and help me develop them further.
+      </p>
+      <p className="about__bio__text">
+        During my time at <span className="text-accent"> _nology</span> I was
+        able to test my abilities and apply all the skills I learnt to complete
+        Projects. I was able to complete a client project for the{" "}
+        <span className="text-accent">
+          {" "}
+          Orchestra of the Age of Enlightenment{" "}
+        </span>
+        .
+      </p>
+      <p className="about__bio__text">
+        Working in an agile team compelting sprints week to week gave me an
+        insight on the avaergae day of a{" "}
+        <span className="text-accent"> Web-develpoer. </span>
+      </p>
     </Wrapper>
   );
 };

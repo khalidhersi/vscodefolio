@@ -1,6 +1,6 @@
 {
-  "homepage": "http://khalidhersi.github.io/vscodefolio",
   "name": "vscodio",
+  "homepage": "http://khalidhersi.github.io/vscodefolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write ."
   },
   "browserslist": {
     "production": [
@@ -38,6 +39,7 @@
     "gh-pages": "2.0.1",
     "react-router-dom": "^6.2.1",
     "sass": "^1.46.0",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "prettier": "^2.5.1"
   }
 }

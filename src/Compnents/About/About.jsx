@@ -3,13 +3,11 @@ import "./About.scss";
 import AboutAnimationText from "../AboutAnimationText/AboutAnimationText";
 import Typewriter from "typewriter-effect";
 
-
-
 const About = () => {
   return (
     <section className="about sections" id="about">
-<h2 className="about__header">
-  {/* <AboutAnimation/> */}
+      <h2 className="about__header">
+        {/* <AboutAnimation/> */}
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -21,9 +19,9 @@ const About = () => {
               .start();
           }}
         />
-      </h2>     
-       <div className="about__bio">
-          <AboutAnimationText/>
+      </h2>
+      <div className="about__bio">
+        <AboutAnimationText />
       </div>
     </section>
   );

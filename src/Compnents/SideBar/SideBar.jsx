@@ -35,7 +35,12 @@ const SideBar = () => {
           </a>
         </li>
         <li>
-          <Link to="../../assets/data/Khalid-Hersi-Profile.pptx" target="_blank" download className="sidebar__items">
+          <Link
+            to="../../assets/data/Khalid-Hersi-Profile.pptx"
+            target="_blank"
+            download
+            className="sidebar__items"
+          >
             <i className="sidebar__icon fas fa-file-alt" />
           </Link>
         </li>

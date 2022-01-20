@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const Java = () => {
   return (
     <Wrapper className="skills__container__item">
-     <i class="skills__container__item__icon fab fa-java"></i>
-                <p class="skills__container__item__desc">Java</p>
+      <i class="skills__container__item__icon fab fa-java"></i>
+      <p class="skills__container__item__desc">Java</p>
     </Wrapper>
   );
 };

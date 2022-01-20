@@ -1,7 +1,7 @@
-@import './_variables.scss';
+@import "./_variables.scss";
 
 $header-font: Arial, Helvetica, sans-serif;
-$body-font: 'Poppins', sans-serif;
+$body-font: "Poppins", sans-serif;
 
 h1,
 h2,
@@ -26,8 +26,7 @@ h6 {
   text-transform: uppercase;
 }
 
-
-.last--name{
+.last--name {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
@@ -40,8 +39,8 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
-h2,
-.landing__header__title {
+  h2,
+  .landing__header__title {
     font-size: 3.8rem;
   }
 }

@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 const AboutAnimation = (word) => {
   return (
     <Wrapper className="about__header">
-        <span >About</span>
+      <span>About</span>
     </Wrapper>
   );
 };

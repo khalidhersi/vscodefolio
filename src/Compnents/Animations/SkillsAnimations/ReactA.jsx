@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const ReactA = () => {
   return (
     <Wrapper className="skills__container__item">
-     <i class="skills__container__item__icon fab fa-react fa-spin"></i>
-                <p class="skills__container__item__desc">React</p>
+      <i class="skills__container__item__icon fab fa-react fa-spin"></i>
+      <p class="skills__container__item__desc">React</p>
     </Wrapper>
   );
 };

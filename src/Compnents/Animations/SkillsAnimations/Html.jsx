@@ -5,7 +5,7 @@ const Html = () => {
   return (
     <Wrapper className="skills__container__item">
       <i class="skills__container__item__icon fab fa-html5"></i>
-    <p class="skills__container__item__desc">HTML</p>
+      <p class="skills__container__item__desc">HTML</p>
     </Wrapper>
   );
 };

@@ -6,16 +6,13 @@
   border: none;
   position: relative;
   font-size: 0.7em;
-
 }
 
 .secondary {
   background-color: $accent-color;
 }
 
-
-@media screen and (min-width: 320px){
-  
+@media screen and (min-width: 320px) {
   .secondary {
     position: relative;
     top: 3em;
@@ -23,12 +20,10 @@
   }
 }
 
-@media screen and (min-width: 520px){
-  
+@media screen and (min-width: 520px) {
   .secondary {
     position: relative;
     bottom: 10em;
     font-size: 0.5em;
   }
 }
-
