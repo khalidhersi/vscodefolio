@@ -81,7 +81,7 @@ const Carousel = () => {
 
   const buttonJSX = (
     <div className="carousel__content carousel__content--button">
-      <div onClick={handleClick}>
+      <div className="carousel__content--button__container" onClick={handleClick}>
         <Button buttonText={"Find out more"} isSecondary={true} />
       </div>
     </div>
@@ -89,9 +89,9 @@ const Carousel = () => {
 
   const textJSX = (
     <div className="carousel__content carousel__content--text">
-      <img src={whiteCross} className="carousel___cross" onClick={handleClick} alt="Close text" />
-      <h3 className="carousel___heading">{projectInfoArr[counter].title}</h3>
-      <p>{projectInfoArr[counter].description}</p>
+      <img src={whiteCross} className="carousel__content__cross" onClick={handleClick} alt="Close text" />
+      <h3 className="carousel__content--text__heading">{projectInfoArr[counter].title}</h3>
+      <p className="carousel__content--text__description">{projectInfoArr[counter].description}</p>  
     </div>
   );
 
