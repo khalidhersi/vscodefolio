@@ -15,12 +15,12 @@
       color: $accent-color;
     }
     &__image {
-      width: 49vh;
+      width: auto;
       height: 32vh;
       &__reflection {
         position: absolute;
         top: 32em;
-        width: 49vh;
+        width: auto;
         height: 32vh;
         transform: rotate(0.5turn);
       }
@@ -34,7 +34,7 @@
         bottom: 7em;
         left: 1em;
       &__image {
-        width: 62vh;
+        width: auto;
         height: 39vh;
         position: relative;
         top: 0.9em;
@@ -42,8 +42,7 @@
         &__reflection {
             position: absolute;
             top: 36em;
-            
-            width: 62vh;
+            width: auto;
             height: 39vh;
             transform: rotate(0.5turn);
           }
@@ -57,7 +56,7 @@
         bottom: 0.8em;
         left: 1em;
       &__image {
-        width: 99vh;
+        width: auto;
         height: 66vh;
         position: relative;
         top: 0.9em;
