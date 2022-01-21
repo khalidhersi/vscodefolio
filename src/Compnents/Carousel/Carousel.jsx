@@ -10,6 +10,7 @@ import clientProject from "../../assets/images/client-project.png";
 import earWorm from "../../assets/images/ear-worm.png";
 import whiteCross from "../../assets/images/white-cross.png";
 import Button from "../Button/Button";
+import vueClone from "../../assets/images/fullstack-project.png";
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -71,6 +72,12 @@ const Carousel = () => {
       title: "Orchestra of the Age of Enlightenment: Client Project",
       description:
         'This is a client project for the "Orchestra of the Age of Enlightenment"; as a group of 25 we split this project into 2 groups: front-end and back-end; working in an agile team, completing tickets for weekly sprints to produce and showcase the project to the client. My team was working on the front-end side, we created a react app using mobile first design to produce an amazing UI.',
+    },
+    {
+      image: vueClone,
+      title: "Full-Stack Project: Vue Clone",
+      description:
+        "This fullstack project works using a java backend I created that conatins a list of movies and thier data. The Front-end collects the Back-ends data using fetch; you can navigate to the differnt endpoints of the backend using differnt urls. This backend supports GET requests, POST requests and DELETE requests and was modeled after the Vue cinema Front-end Design."
     },
   ];
 
