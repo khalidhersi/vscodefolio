@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vscodefolio/static/css/main.abc51864.css",
+    "main.css": "/vscodefolio/static/css/main.50a3ce0a.css",
     "main.js": "/vscodefolio/static/js/main.a2d12af8.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
     "static/media/client-project.png": "/vscodefolio/static/media/client-project.ae8444141ff81b11e0bb.png",
@@ -11,12 +11,12 @@
     "static/media/morsecode.png": "/vscodefolio/static/media/morsecode.298c74f535d9cbdaa11b.png",
     "static/media/PageNotFound.png": "/vscodefolio/static/media/PageNotFound.d2d35bd19f77536a3cc1.png",
     "index.html": "/vscodefolio/index.html",
-    "main.abc51864.css.map": "/vscodefolio/static/css/main.abc51864.css.map",
+    "main.50a3ce0a.css.map": "/vscodefolio/static/css/main.50a3ce0a.css.map",
     "main.a2d12af8.js.map": "/vscodefolio/static/js/main.a2d12af8.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abc51864.css",
+    "static/css/main.50a3ce0a.css",
     "static/js/main.a2d12af8.js"
   ]
 }
