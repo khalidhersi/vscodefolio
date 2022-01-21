@@ -22,19 +22,18 @@
 
 @media screen and (min-width: 320px) {
   .about {
-    padding-top: 7rem;
+    overflow-y: auto;
     position: relative;
     right: 0.5em;
+    top:1.6rem;
     &__header {
       font-size: 2.7rem;
       text-align: left;
     }
     &__bio {
-      padding: 3rem;
+      padding: 3rem 2rem;
       &__text {
-        padding-left: 15%;
-        font-size: 1.3rem;
-        padding-right: 5%;
+        font-size: 1.27rem;
         text-align: left;
       }
     }
