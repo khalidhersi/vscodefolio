@@ -18,7 +18,7 @@ const Nav = () => {
             Skills.jsx
           </Link>
         </Link>
-        <Link to="/" className="navbar__menu__list" id="home">
+        <Link to="/vscodefolio" className="navbar__menu__list" id="home">
           <i className="navbar__menu__icon fas fa-home" />
         </Link>
         <Link to="/vscodefolio/projects" className="navbar__menu__list">

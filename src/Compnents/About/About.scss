@@ -27,8 +27,11 @@
     right: 0.5em;
     top:1.6rem;
     &__header {
-      font-size: 2.7rem;
-      text-align: left;
+      position: relative;
+      top: 0em;
+      right: 0.2em;
+      font-size: 3.5rem;
+      text-align: center;
     }
     &__bio {
       padding: 3rem 2rem;

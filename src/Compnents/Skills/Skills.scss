@@ -40,7 +40,8 @@
 
 @media screen and (min-width: 320px) {
   .skills {
-    padding-top: 0.7em;
+    position: relative;
+    top: 1.4em;
     &__header {
       position: relative;
       top: 0.4em;
