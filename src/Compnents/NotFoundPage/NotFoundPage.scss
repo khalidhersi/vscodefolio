@@ -45,11 +45,7 @@
       top: 0.9em;
       right: 0.5em;
       &__reflection {
-        position: absolute;
-        top: 22.5em;
-        width: auto;
-        height: 39vh;
-        transform: rotate(0.5turn);
+        display: none;
       }
     }
   }
