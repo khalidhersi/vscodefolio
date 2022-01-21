@@ -11,12 +11,24 @@
 .secondary {
   background-color: $accent-color;
 }
+.primary{
+
+  background-color: $accent-color;
+}
 
 @media screen and (min-width: 320px) {
   .secondary {
     position: relative;
     top: 3em;
     font-size: 0.5em;
+  }
+  .primary{
+    position: fixed;
+    top: 23em;
+    left: 34.5%;
+    width: 30%;
+    font-size: 1.3em;
+    font-weight: bold;
   }
 }
 
@@ -25,5 +37,12 @@
     position: relative;
     bottom: 10em;
     font-size: 0.5em;
+  }
+  .primary{
+    position: fixed;
+    top: 32%;
+    left: 40%;
+    width: 20%;
+    font-size: 2em;
   }
 }

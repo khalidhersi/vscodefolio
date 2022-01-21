@@ -82,6 +82,14 @@
           position: relative;
           width: fit-content;
         }
+        a {
+          position: fixed;
+          top: 30em;
+          left: 34.5%;
+          z-index: 10000;
+          width: 30%;
+          height: 3em;
+        }
       }
     }
   }
@@ -153,6 +161,15 @@
           &__cross {
             position: relative;
             left: 20em;
+          }
+          a{
+            z-index: 10000;
+            position: fixed;
+            top: 32%;
+            left: 40%;
+            width: 20%;
+            height: 4em;
+
           }
         }
       }
