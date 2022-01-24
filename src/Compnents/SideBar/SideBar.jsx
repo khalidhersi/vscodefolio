@@ -7,12 +7,12 @@ const SideBar = () => {
     <div className="sidebar">
       <ul className="sidebar__menu"> 
         <li>
-          <Link to="/vscodefolio" className="sidebar__items">
+          <Link to="/" className="sidebar__items">
             <i className=" sidebar__items fas fa-home" />
           </Link>
         </li>
         <li>
-          <Link to="/vscodefolio/loading" className="sidebar__items">
+          <Link to="/loading" className="sidebar__items">
             <i className="sidebar__icon fas fa-user-graduate" />
           </Link>
         </li>
