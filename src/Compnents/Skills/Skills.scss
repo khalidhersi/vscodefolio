@@ -4,10 +4,12 @@
 .skills {
   position: relative;
   bottom: 1em;
+  overflow: hidden;
   &__header {
     display: flex;
     justify-content: center;
-    margin-left: 2rem;
+    align-content: center;
+
     text-align: center;
     color: $accent-color;
   }
@@ -22,7 +24,7 @@
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      width: 50%;
+      width: 30%;
       margin-bottom: 0px;
       &__icon {
         font-size: 3.5rem;
@@ -45,12 +47,14 @@
     &__header {
       position: relative;
       top: 0.4em;
-      right: 0.2em;
+      left: 0.1em;
       font-size: 3.5rem;
       text-align: center;
     }
     &__container {
-      .skills__container__item {
+      position: relative;
+      left: 1em;
+      &__item {
         &__icon {
           font-size: 5.5rem;
         }
@@ -66,8 +70,13 @@
     &__header {
       position: relative;
       top: 0.4em;
+      left: 2rem;
       font-size: 4.3rem;
       text-align: center;
+    }
+    &__container{
+      position: relative;
+      left: 4em;
     }
   }
 }
@@ -78,7 +87,9 @@
     position: relative;
     bottom: 1em;
     &__header {
-      font-size: 4.5rem;
+      font-size: 5.5rem;
+      position: relative;
+margin-right: 0.5em;
     }
   }
 }

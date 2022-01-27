@@ -3,12 +3,16 @@ import "./Skills.scss";
 import Typewriter from "typewriter-effect";
 import Html from "../Animations/SkillsAnimations/Html";
 import Css from "../Animations/SkillsAnimations/Css";
+import Testing from "../Animations/SkillsAnimations/Testing";
 import Scss from "../Animations/SkillsAnimations/Scss";
+import TypeScript from "../Animations/SkillsAnimations/TypeScript";
 import JS from "../Animations/SkillsAnimations/JS";
 import ReactA from "../Animations/SkillsAnimations/ReactA";
-import Bootstrap from "../Animations/SkillsAnimations/Bootstrap";
+import SpringBoot from "../Animations/SkillsAnimations/SpringBoot";
 import Java from "../Animations/SkillsAnimations/Java";
+import Bootstrap from "../Animations/SkillsAnimations/Bootstrap";
 import Python from "../Animations/SkillsAnimations/Python";
+import MySQL from "../Animations/SkillsAnimations/MySQL";
 
 const Skills = () => {
   return (
@@ -50,6 +54,18 @@ const Skills = () => {
         </div>
         <div class="skills__container__item">
           <Python />
+        </div>
+        <div class="skills__container__item">
+          <Testing  />
+        </div>
+        <div class="skills__container__item">
+          <TypeScript />
+        </div>
+        <div class="skills__container__item">
+          <MySQL />
+        </div>
+        <div class="skills__container__item">
+          <SpringBoot />
         </div>
       </div>
     </section>
