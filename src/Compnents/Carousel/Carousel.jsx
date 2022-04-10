@@ -12,6 +12,7 @@ import whiteCross from "../../assets/images/white-cross.png";
 import Button from "../Button/Button";
 import vueClone from "../../assets/images/fullstack-project.png";
 import ticketTracker from "../../assets/images/ticket-tracker.png";
+import wordleClone from "../../assets/images/wordle.png";
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -52,14 +53,21 @@ const Carousel = () => {
         "I made a MineSweeper clone using vanilla JavaScript. It cointains a Timeer that counts down and ends the game at 0; the game also ends when a bomb is clicked just like the original MineSweeper game.",
         GithubLink: "https://khalidhersi.github.io/MineSweeper/"    
       },
-    {
-      image: earWorm,
-      title: "Ear Worm React App",
-      description:
-        "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
-        GithubLink: "https://github.com/khalidhersi/react-code-along"
-
-      },
+      {
+        image: morseCode,
+        title: "Morse Code Translator",
+        description:
+          "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
+          GithubLink: "https://khalidhersi.github.io/Morse-code-translator/"
+        },
+      {
+        image: earWorm,
+        title: "Ear Worm React App",
+        description:
+          "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
+          GithubLink: "https://github.com/khalidhersi/react-code-along"
+  
+        },
     {
       image: ticketTracker,
       title: "Ticket Tracker",
@@ -75,13 +83,6 @@ const Carousel = () => {
         GithubLink: "https://khalidhersi.github.io/Punk-API/"
       },
     {
-      image: morseCode,
-      title: "Morse Code Translator",
-      description:
-        "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
-        GithubLink: "https://khalidhersi.github.io/Morse-code-translator/"
-      },
-    {
       image: clientProject,
       title: "Orchestra of the Age of Enlightenment: Client Project",
       description:
@@ -95,6 +96,13 @@ const Carousel = () => {
         "This fullstack project works using a java backend I created that conatins a list of movies and thier data. The Front-end collects the Back-ends data using fetch; you can navigate to the differnt endpoints of the backend using differnt urls. This backend supports GET requests, POST requests and DELETE requests and was modeled after the Vue cinema Front-end Design.",
         GithubLink: "https://khalidhersi.github.io/React-FrontEnd/"
       },
+      {
+        image: wordleClone,
+        title: "Wordle Clone",
+        description:
+          "This a Wordle Clone I created using React. This game works using multiple state hooks to determine whether the letters you enter are the same as the hidden word.",
+          GithubLink: "https://khalidhersi.github.io/wordle/"
+        },
   ];
 
   const buttonJSX = (
