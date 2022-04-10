@@ -20,10 +20,6 @@ const Projects = () => {
         />
       </h2>
       <Carousel />
-      {/* <div className="projects__card__info__links">
-                    <a href="https://github.com/jasenscode/Calculator" target="_blank" className="projects__card__info__links__link">Github</a>
-                    <a href="https://jasenscode.github.io/Calculator/" target="_blank" className="projects__card__info__links__link">Demo</a>
-                </div> */}
     </section>
   );
 };

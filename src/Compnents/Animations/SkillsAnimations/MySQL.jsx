@@ -12,7 +12,7 @@ const MySQL = () => {
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-140rem);
+    transform: translateY(-170rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 2.2s ease-in 1.1s both;
+  animation: ${moveInDown} 2.8s ease-in 1.1s both;
 `;
 
 export default MySQL;

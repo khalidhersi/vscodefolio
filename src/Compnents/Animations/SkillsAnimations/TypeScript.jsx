@@ -4,15 +4,15 @@ import styled, { keyframes } from "styled-components";
 const TupeScript = () => {
   return (
     <Wrapper className="skills__container__item">
-      <img class="skills__container__item__icon" src="https://img.icons8.com/material/106/d8d8d8/typescript.png"/>
-      <p class="skills__container__item__desc">JavaScript</p>
+      <img class="skills__container__item__icon" id="typescript" src="https://img.icons8.com/material/106/d8d8d8/typescript.png"/>
+      <p class="skills__container__item__desc">TypeScript</p>
     </Wrapper>
   );
 };
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-80rem);
+    transform: translateY(-170rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1.4s ease-in 1.1s both;
+  animation: ${moveInDown} 2.6s ease-in 1.1s both;
 `;
 
 export default TupeScript;

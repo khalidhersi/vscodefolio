@@ -5,6 +5,7 @@
   position: relative;
   bottom: 1em;
   overflow: hidden;
+  text-align: center;
   &__header {
     display: flex;
     justify-content: center;
@@ -38,15 +39,19 @@
       }
     }
   }
+  #typescript{
+    width: 5rem;
+  }
 }
 
 @media screen and (min-width: 320px) {
   .skills {
     position: relative;
-    top: 1.4em;
+    top: 0em;
+    height: 100vh;
     &__header {
       position: relative;
-      top: 0.4em;
+      top: 0.3em;
       left: 0.1em;
       font-size: 3.5rem;
       text-align: center;
@@ -56,9 +61,18 @@
       left: 1em;
       &__item {
         &__icon {
-          font-size: 5.5rem;
+          font-size: 3.5rem;
         }
       }
+    }
+  }
+  #react-testing-library{
+    &__container{
+    position: relative;
+    top: 1.6rem;
+    }
+    &__text{
+      font-size: 1.19rem;
     }
   }
 }
@@ -67,9 +81,11 @@
   .skills {
     position: relative;
     left: 0.6em;
+    top: -1.3rem;
+    height: 100vh;
     &__header {
       position: relative;
-      top: 0.4em;
+      top: 0.5em;
       left: 2rem;
       font-size: 4.3rem;
       text-align: center;
@@ -85,11 +101,19 @@
   .skills {
     padding-top: 0;
     position: relative;
-    bottom: 1em;
+    top: -2em;
+    overflow: hidden;
+    height: 100vh;
     &__header {
       font-size: 5.5rem;
       position: relative;
-margin-right: 0.5em;
+      margin-right: 0.5em;
+    }
+  }
+  #react-testing-library{
+    &__container{
+    position: relative;
+    top: 0rem;
     }
   }
 }

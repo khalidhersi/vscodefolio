@@ -12,7 +12,7 @@ const SpringBoot = () => {
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-110rem);
+    transform: translateY(-170rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1.6s ease-in 1.1s both;
+  animation: ${moveInDown} 3.0s ease-in 1.1s both;
 `;
 
 export default SpringBoot;
