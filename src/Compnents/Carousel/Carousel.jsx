@@ -65,7 +65,7 @@ const Carousel = () => {
       title: "Ticket Tracker",
       description:
         "After learning how to immplament the state hook in react, I was able to create a simple Ticket Tracker that has the added bonus of being able to map over a data file of employees and return names + occupations of all the employees in the company.",
-        GithubLink: "https://khalidhersi.github.io/ticket-tracker/"
+        GithubLink: "https://khalidhersi.github.io/ticket-tracker-v2/"
       },
     {
       image: punkApi,
