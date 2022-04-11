@@ -11,22 +11,25 @@
       flex-wrap: wrap;
       justify-content: left;
       align-items: center;
-      color: $font-color;
       overflow-y: scroll;
     &__container{
       display: flex;
       flex-direction: column;
       width: fit-content;
       height: fit-content;
-      background-color: red;
+      background-color: $font-color;
+      border: 4px solid $accent-color;
       margin: 1rem 0;
-      padding: 0 1rem;
+      padding: 0.5rem 1rem;
+      color: $body-color;
+      border-radius: 20px;
     }
     &__title {
       font-size: 2rem;
-      border-bottom: 1px solid $font-color;
+      border-bottom: 1px solid $body-color;
       width: fit-content;
       padding-bottom: 0.3rem;
+      color: $body-color;
     }
     &__list { 
       &__ltems {
@@ -46,6 +49,9 @@
       &__list {
         &__ltems {
         }
+      }
+      .text-accent{
+        color: rgb(65, 55, 255);
       }
     }
   }

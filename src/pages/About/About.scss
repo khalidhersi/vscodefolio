@@ -46,7 +46,7 @@
 @media screen and (min-width: 520px) {
   .about {
     position: relative;
-    top:1.6rem;
+    top:0rem;
     &__header {
       font-size: 4.3rem;
       text-align: center;
@@ -56,13 +56,13 @@
     &__bio {
       padding: 3.5rem 3rem;
       position: relative;
-      bottom: 2em;
+      bottom: 4em;
 
       &__text {
         position: relative;
         top: 1em;
         padding-left: 5%;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         padding-right: 15%;
         text-align: left;
       }
