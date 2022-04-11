@@ -11,7 +11,7 @@
       padding: 20px;
       background-color: $font-color;
       border: 4px solid $accent-color;
-      border-radius: 1000em;
+      border-radius: 30px;
       position: relative;
       left: 0.4em;
       &__image {
@@ -34,7 +34,15 @@
         position: absolute;
         z-index: 1;
         color: $font-color;
-
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   right: 0;
+        //   background: rgba(black, 0.5);
+        // }
         &--button {
           bottom: 0.9em;
           font-size: 2em;
@@ -53,34 +61,37 @@
           padding: 0px 20px;
           top: 0;
           right: 0.05em;
-          border-radius: 1000em;
-          overflow-y: auto;
+          border-radius: 30px;          overflow-y: auto;
           background: rgba(black, 0.8);
           white-space: pre-line;
           display: flex;
           flex-direction: column;
           text-align: center;
+          
           &__heading {
             font-size: 1.5rem;
             font-weight: bold;
             text-align: center;
             position: relative;
-            top: 2em;
+            top: 0em;
             color: $accent-color;
           }
           &__description {
-            padding-top: 4em;
-            font-size: 1em;
+            position: relative;
+            bottom: 3rem;
+            padding-top: 3em;
+            font-size: 1.25em;
           }
         }
         &__cross {
           position: relative;
-          top: 1em;
-          left: 46%;
-          height: 25px;
-          width: 25px;
+          top: 1.7em;
+          left: 94%;
+          height: 1.5rem;
+          width: auto;
           position: relative;
           width: fit-content;
+          z-index: 9999;
         }
         a {
           position: fixed;

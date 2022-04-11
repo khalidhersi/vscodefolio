@@ -23,12 +23,12 @@
     font-size: 0.5em;
   }
   .primary{
-    position: fixed;
-    top: 23em;
-    left: 34.5%;
-    width: 30%;
+    position: relative;
+    bottom: 22.8rem;
+    width: 100%;
     font-size: 1.3em;
     font-weight: bold;
+    padding: 0.3rem;
   }
 }
 
@@ -39,10 +39,23 @@
     font-size: 0.5em;
   }
   .primary{
-    position: fixed;
-    top: 32%;
-    left: 40%;
-    width: 20%;
+    position: relative;
+    top: 30rem;
+    width: 100%; 
+    min-width: fit-content;   
+    height: fit-content;
     font-size: 2em;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 800px) {
+  .secondary {
+
+  }
+  .primary{
+    position: relative;
+    top: 32.5rem;
+    font-size: 1.5em;
+    
   }
 }
