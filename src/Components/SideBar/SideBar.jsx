@@ -12,7 +12,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/loading" className="sidebar__items">
+          <Link to="/Experiences" className="sidebar__items">
             <i className="sidebar__icon fas fa-user-graduate" />
           </Link>
         </li>

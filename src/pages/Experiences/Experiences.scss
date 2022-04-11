@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+
+@media screen and (min-width: 320px) {
+  .experiences {
+      display: flex;
+      text-align: left;
+      position: relative;
+      top: 2em;
+      left: 5em;
+      padding: 1rem;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+      color: $font-color;
+      overflow-y: scroll;
+    &__container{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      height: fit-content;
+      background-color: red;
+      margin: 1rem 0;
+      padding: 0 1rem;
+    }
+    &__title {
+      font-size: 2rem;
+      border-bottom: 1px solid $font-color;
+      width: fit-content;
+      padding-bottom: 0.3rem;
+    }
+    &__list { 
+      &__ltems {
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        position: relative;
+        left: 0.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+    .experiences {
+      &__title {
+      }
+      &__list {
+        &__ltems {
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .experiences {
+      &__title {
+      }
+      &__list {
+        &__ltems {
+        }
+      }
+    }
+  }
+  

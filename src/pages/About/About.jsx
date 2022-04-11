@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import AboutAnimationText from "../AboutAnimationText/AboutAnimationText";
+import AboutAnimationText from "../../Components/AboutAnimationText/AboutAnimationText";
 import Typewriter from "typewriter-effect";
 
 const About = () => {

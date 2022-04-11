@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.scss";
 import Typewriter from "typewriter-effect";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../../Components/Carousel/Carousel";
 
 const Projects = () => {
   return (

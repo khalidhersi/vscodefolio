@@ -1,18 +1,18 @@
 import React from "react";
 import "./Skills.scss";
 import Typewriter from "typewriter-effect";
-import Html from "../Animations/SkillsAnimations/Html";
-import Css from "../Animations/SkillsAnimations/Css";
-import Testing from "../Animations/SkillsAnimations/Testing";
-import Scss from "../Animations/SkillsAnimations/Scss";
-import TypeScript from "../Animations/SkillsAnimations/TypeScript";
-import JS from "../Animations/SkillsAnimations/JS";
-import ReactA from "../Animations/SkillsAnimations/ReactA";
-import SpringBoot from "../Animations/SkillsAnimations/SpringBoot";
-import Java from "../Animations/SkillsAnimations/Java";
-import Bootstrap from "../Animations/SkillsAnimations/Bootstrap";
-import Python from "../Animations/SkillsAnimations/Python";
-import MySQL from "../Animations/SkillsAnimations/MySQL";
+import Html from "../../Components/Animations/SkillsAnimations/Html";
+import Css from "../../Components/Animations/SkillsAnimations/Css";
+import Testing from "../../Components/Animations/SkillsAnimations/Testing";
+import Scss from "../../Components/Animations/SkillsAnimations/Scss";
+import TypeScript from "../../Components/Animations/SkillsAnimations/TypeScript";
+import JS from "../../Components/Animations/SkillsAnimations/JS";
+import ReactA from "../../Components/Animations/SkillsAnimations/ReactA";
+import SpringBoot from "../../Components/Animations/SkillsAnimations/SpringBoot";
+import Java from "../../Components/Animations/SkillsAnimations/Java";
+import Bootstrap from "../../Components/Animations/SkillsAnimations/Bootstrap";
+import Python from "../../Components/Animations/SkillsAnimations/Python";
+import MySQL from "../../Components/Animations/SkillsAnimations/MySQL";
 
 const Skills = () => {
   return (

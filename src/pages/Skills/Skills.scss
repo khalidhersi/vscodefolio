@@ -60,6 +60,9 @@
       position: relative;
       left: 1em;
       &__item {
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 0.5rem;
         &__icon {
           font-size: 3.5rem;
         }

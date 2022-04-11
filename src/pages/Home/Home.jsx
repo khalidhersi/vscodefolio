@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.scss";
 import Typewriter from "typewriter-effect";
-import TextAnimation from "../TextAnimation/TextAnimation";
-import NameTextAnimation from "../NameTextAnimation/NameTextAnimation";
-import LastNameAnimation from "../LastNameAnimation/LastNameAnimation";
+import TextAnimation from "../../Components/TextAnimation/TextAnimation";
+import NameTextAnimation from "../../Components/NameTextAnimation/NameTextAnimation";
+import LastNameAnimation from "../../Components/LastNameAnimation/LastNameAnimation";
 
 const Home = () => {
   return (

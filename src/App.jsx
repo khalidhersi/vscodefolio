@@ -1,13 +1,13 @@
 import "./App.scss";
-import Nav from "./Compnents/Nav/Nav";
-import Home from "./Compnents/Home/Home";
-import Experiences from "./Compnents/Experiences/Experiences";
-import About from "./Compnents/About/About";
-import Skills from "./Compnents/Skills/Skills";
-import Projects from "./Compnents/Projects/Projects";
-import Footer from "./Compnents/Footer/Footer";
-import SideBar from "./Compnents/SideBar/SideBar";
-import NotFoundPage from "./Compnents/NotFoundPage/NotFoundPage";
+import Nav from "./Components/Nav/Nav";
+import Home from "./pages/Home/Home";
+import Experiences from "./pages/Experiences/Experiences";
+import About from "./pages/About/About";
+import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
+import Footer from "./Components/Footer/Footer";
+import SideBar from "./Components/SideBar/SideBar";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
