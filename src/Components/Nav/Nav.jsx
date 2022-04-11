@@ -27,10 +27,10 @@ const Nav = () => {
             Projects.json
           </Link>
         </Link>
-        <Link to="/NotFoundPage" className="navbar__menu__list">
+        <Link to="/Experiences" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-markdown" id="markdown" />
-          <Link to="/NotFoundPage" className="navbar__menu__item">
-            Error.md
+          <Link to="/Experiences" className="navbar__menu__item">
+            Experiences.md
           </Link>
         </Link>
       </ul>

@@ -2,31 +2,31 @@
 
 @media screen and (min-width: 320px) {
   .experiences {
-      display: grid;
-      grid-template-areas: 'exper exper exper exper exper exper'
-                            'skills skills lang lang intrests intrests';
+    height: 80vh;
+    overflow-y: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: left;
       position: relative;
-      top: 2em;
-      left: 5em;
+      top: 5rem;
       padding: 1rem;
-      flex-wrap: wrap;
-      justify-content: left;
-      align-items: center;
-      overflow-y: scroll;
     &__container{
       display: flex;
       flex-direction: column;
       width: fit-content;
-      height: fit-content;
+      height: 75%;
       background-color: $font-color;
       border: 4px solid $accent-color;
-      margin: 1rem 0;
+      margin: 1rem 0.5rem;
       padding: 0.5rem 1rem;
       color: $body-color;
       border-radius: 20px;
     }
     &__title {
+      text-align: center;
       font-size: 2rem;
       border-bottom: 1px solid $body-color;
       width: fit-content;
@@ -43,22 +43,35 @@
     }
   }
   .experience{
-    grid-area: exper;
+    order: 3;
   }
-  .skills{
-    grid-area: skills;
+  .tech-skills{
+    order: 2;
   }
   .languages{
-    grid-area: lang;
+    order: 1;
   }
   .intrests{
-    grid-area: intrests;
+    order: 4;
   }
 }
 
 @media screen and (min-width: 520px) {
     .experiences {
-      overflow-y: scroll;
+      overflow: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 2.5rem;
+      height: 100vh;
+      &__container{
+        height: fit-content;
+        margin: 0.8rem 5rem;
+        padding: 1rem 2rem;
+      }
       &__title {
       }
       &__list {
@@ -71,9 +84,21 @@
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 840px) {
     .experiences {
-      overflow-y: scroll;
+      height: fit-content;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(4,1fr) ;
+      grid-template-rows: repeat(1, 1fr) ;
+      gap: 1rem;
+      position: relative;
+      top: 3rem;
+      left: 13%;
+      &__container{
+        margin: 1rem 0;
+        height: 100%;
+      }
       &__title {
       }
       &__list {
@@ -81,5 +106,22 @@
         }
       }
     }
+    .experience{
+      grid-column: 2 / 4;
+      grid-row: 2 / 2;
+    }
+    .tech-skills{
+      grid-column: 2 / 3;
+      grid-row: 1 / 1;
+    }
+    .languages{
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+    .intrests{
+      grid-column: 3 / 4;
+      grid-row: 1 / 1;
+    }
+  
   }
   
