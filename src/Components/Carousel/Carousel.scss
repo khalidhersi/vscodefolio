@@ -187,3 +187,51 @@
     }
   }
 }
+
+@media screen and (min-width: 800px) {
+  .carousel__container {
+
+    .carousel {
+    
+
+      &__image {
+      }
+
+      &__arrow {
+
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &__content {
+        &--button {
+
+          &__container {
+
+          }
+        }
+
+        &--text {
+
+          &__heading {
+
+          }
+          &__description {
+            position: relative;
+            top: 0em;
+            font-size: 1.5rem;
+          }
+        }
+        &__cross {
+
+        }
+        a{
+
+        }
+      }
+    }
+  }
+}
+

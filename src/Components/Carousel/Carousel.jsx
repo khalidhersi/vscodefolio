@@ -72,7 +72,7 @@ const Carousel = () => {
       image: ticketTracker,
       title: "Ticket Tracker",
       description:
-        "After learning how to immplament the state hook in react, I was able to create a simple Ticket Tracker that has the added bonus of being able to map over a data file of employees and return names + occupations of all the employees in the company.",
+        "After learning how to immplament the state hook in react, I was able to create a simple Ticket Tracker that has the added bonus of being able to map over a data file of employees and return info on of all the employees in the company.",
         GithubLink: "https://khalidhersi.github.io/ticket-tracker-v2/"
       },
     {
@@ -86,14 +86,14 @@ const Carousel = () => {
       image: clientProject,
       title: "Orchestra of the Age of Enlightenment: Client Project",
       description:
-        'This is a client project for the "Orchestra of the Age of Enlightenment"; as a group of 25 we split this project into 2 groups: front-end and back-end; working in an agile team, completing tickets for weekly sprints to produce and showcase the project to the client. My team was working on the front-end side, we created a react app using mobile first design to produce an amazing UI.',
+        'This is a client project for the "Orchestra of the Age of Enlightenment". Working in an agile team, my team worked on the frontend; creating a react app using mobile first design to produce an amazing UI.',
         GithubLink: "https://nology-tech.github.io/oae-event-programme/6/home"
       },
     {
       image: vueClone,
       title: "Full-Stack Project: Vue Clone",
       description:
-        "This fullstack project works using a java backend I created that conatins a list of movies and thier data. The Front-end collects the Back-ends data using fetch; you can navigate to the differnt endpoints of the backend using differnt urls. This backend supports GET requests, POST requests and DELETE requests and was modeled after the Vue cinema Front-end Design.",
+        "This fullstack project works using a Spring BootJava Backend & a React Frontend. It is a Vue Cinema Clone, holding a list of movies and thier information on the server.",
         GithubLink: "https://khalidhersi.github.io/React-FrontEnd/"
       },
       {
