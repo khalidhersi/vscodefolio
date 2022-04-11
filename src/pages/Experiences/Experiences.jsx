@@ -3,14 +3,14 @@ import "./Experiences.scss"
 
 const Experiences = () => {
   return <div className="experiences">
-  <div className="experiences__container">
+  <div className="experiences__container experience">
     <h3 className="experiences__title">Experience</h3>
     <ul className="experiences__list">      
       <li className="experiences__list__ltems">Civil Engineering BEng Undergraduate degree <span className="text-accent">Sept 2017 - Aug 2020.</span></li>
       <li className="experiences__list__ltems">12 Week BootCapm At _nology <span className="text-accent">Oct 2021 - Jan 2022.</span></li>
     </ul>
     </div>
-    <div className="experiences__container">
+    <div className="experiences__container skills">
     <h3 className="experiences__title">Technical Skills</h3>
     <ul className="experiences__list">      
       <li className="experiences__list__ltems">Full-Stack Web Development</li>
@@ -21,8 +21,8 @@ const Experiences = () => {
       <li className="experiences__list__ltems">Dnd-to-Dnd Testing</li>
     </ul>
     </div>
-    <div className="experiences__container">
-    <h3 className="experiences__title">Programming Languages / Tech Stacks</h3>
+    <div className="experiences__container languages">
+    <h3 className="experiences__title">Languages</h3>
     <ul className="experiences__list">
       <li className="experiences__list__ltems">Html</li>
       <li className="experiences__list__ltems">CSS</li>
@@ -34,7 +34,7 @@ const Experiences = () => {
       <li className="experiences__list__ltems">C#</li>
     </ul>
     </div>
-    <div className="experiences__container">
+    <div className="experiences__container intrests">
     <h3 className="experiences__title">My Intrests</h3>
     <ul className="experiences__list">
       <li className="experiences__list__ltems">Game Development</li>

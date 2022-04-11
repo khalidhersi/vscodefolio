@@ -9,7 +9,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  top: 1em;
+  top: 6em;
   right: 0em;
 
   h2 {
@@ -33,14 +33,14 @@
 @media screen and (min-width: 520px) {
   .error__container {
     position: relative;
-    bottom: 6em;
-    left: 1em;
+    top: 2rem;
+    left: 2em;
     h2{
       font-size: 2.3em;
     }
     &__image {
       width: auto;
-      height: 39vh;
+      height: 50vh;
       position: relative;
       top: 0.9em;
       right: 0.5em;
@@ -54,7 +54,7 @@
 @media screen and (min-width: 800px) {
   .error__container {
     position: relative;
-    bottom: 0.8em;
+    top: 1rem;
     left: 1em;
     h2{
       font-size: 5em;

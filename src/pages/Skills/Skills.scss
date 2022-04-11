@@ -1,9 +1,10 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/_typography";
 
-.skills {
+.skills { 
+  z-index: 1;
   position: relative;
-  bottom: 1em;
+  top: 1em;
   overflow: hidden;
   text-align: center;
   &__header {
@@ -46,9 +47,10 @@
 
 @media screen and (min-width: 320px) {
   .skills {
+    z-index: 1;
     position: relative;
-    top: 0em;
     height: 100vh;
+    top: 2em;
     &__header {
       position: relative;
       top: 0.3em;
@@ -82,9 +84,10 @@
 
 @media screen and (min-width: 520px) {
   .skills {
+    z-index: 1;
     position: relative;
     left: 0.6em;
-    top: -1.3rem;
+    top: 1em;
     height: 100vh;
     &__header {
       position: relative;
@@ -102,11 +105,12 @@
 
 @media screen and (min-width: 800px) {
   .skills {
+    z-index: 1;
     padding-top: 0;
     position: relative;
-    top: -2em;
     overflow: hidden;
     height: 100vh;
+    top: 1em;
     &__header {
       font-size: 5.5rem;
       position: relative;

@@ -3,6 +3,8 @@
 
 .about {
   height: 100vh;
+  position: relative;
+  top: 1em;
   &__header {
     display: flex;
     justify-content: center;
@@ -25,10 +27,10 @@
     overflow-y: auto;
     position: relative;
     right: 0.5em;
-    top:1.6rem;
+    top:  2rem;
     &__header {
       position: relative;
-      top: 0em;
+      top: 0.2em;
       right: 0.2em;
       font-size: 3.5rem;
       text-align: center;
@@ -36,6 +38,8 @@
     &__bio {
       padding: 3rem 2rem;
       &__text {
+        position: relative;
+        bottom: 0.5em;
         font-size: 1.27rem;
         text-align: left;
       }
@@ -46,24 +50,31 @@
 @media screen and (min-width: 520px) {
   .about {
     position: relative;
-    top:0rem;
+    top: 2rem;
     &__header {
-      font-size: 4.3rem;
+      font-size: 5.3rem;
       text-align: center;
       position: relative;
-      bottom: 0.2em;
+      top: -0.05em;
+      left: 2rem;
     }
     &__bio {
       padding: 3.5rem 3rem;
       position: relative;
-      bottom: 4em;
-
+      bottom: 3em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &__text {
         position: relative;
-        top: 1em;
+        top: 1.5em;
+        margin: 0 auto;
+        max-width: 60rem;
         padding-left: 5%;
-        font-size: 1.4rem;
-        padding-right: 15%;
+        font-size: 2rem;
+        font-weight: 500;
         text-align: left;
       }
     }

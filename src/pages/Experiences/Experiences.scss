@@ -2,7 +2,9 @@
 
 @media screen and (min-width: 320px) {
   .experiences {
-      display: flex;
+      display: grid;
+      grid-template-areas: 'exper exper exper exper exper exper'
+                            'skills skills lang lang intrests intrests';
       text-align: left;
       position: relative;
       top: 2em;
@@ -40,10 +42,23 @@
       }
     }
   }
+  .experience{
+    grid-area: exper;
+  }
+  .skills{
+    grid-area: skills;
+  }
+  .languages{
+    grid-area: lang;
+  }
+  .intrests{
+    grid-area: intrests;
+  }
 }
 
 @media screen and (min-width: 520px) {
     .experiences {
+      overflow-y: scroll;
       &__title {
       }
       &__list {
@@ -58,6 +73,7 @@
 
   @media screen and (min-width: 800px) {
     .experiences {
+      overflow-y: scroll;
       &__title {
       }
       &__list {

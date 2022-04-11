@@ -3,7 +3,7 @@
 
 .projects {
   position: relative;
-  bottom: 5em;
+  top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@
 @media screen and (min-width: 320px) {
   .projects {
     position: relative;
-    top: 1.7rem;
+    top: 3.5rem;
     right: 0.5em;
     &__header {
       position: relative;
@@ -34,7 +34,8 @@
 
 @media screen and (min-width: 520px) {
   .projects {
-    top: 1.7rem;
+    position: relative;
+    top: 4rem;
     &__header {
       font-size: 4.3rem;
       text-align: center;
@@ -44,6 +45,8 @@
 
 @media screen and (min-width: 800px) {
   .projects {
+    position: relative;
+    top: 4rem;
     &__header {
       font-size: 6rem;
       position: relative;
