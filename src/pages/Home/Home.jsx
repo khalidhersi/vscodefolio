@@ -4,15 +4,15 @@ import Typewriter from "typewriter-effect";
 import TextAnimation from "../../Components/TextAnimation/TextAnimation";
 import NameTextAnimation from "../../Components/NameTextAnimation/NameTextAnimation";
 import LastNameAnimation from "../../Components/LastNameAnimation/LastNameAnimation";
-import useSound from "use-sound";
-import onePieceSong from "../../assets/data/onepiece.wav";
+// import useSound from "use-sound";
+// import melody from "../../assets/data/melody.wav";
 
 const Home = () => {
-  const [play] = useSound(onePieceSong, { volume: 0.25 });
+  // const [play] = useSound(melody, { volume: 0.25 });
 
   return (
     <section className="landing sections">
-      <button onClick={play()} className="one-piece__song" />
+      {/* <button onClick={play()} className="one-piece__song" /> */}
       <header className="landing__header">
         <TextAnimation />
         <NameTextAnimation />

@@ -7,7 +7,7 @@ const SideBar = () => {
     <div className="sidebar">
       <ul className="sidebar__menu">
         <li>
-          <Link to="/" className="sidebar__items">
+          <Link to="/vscodefolio" className="sidebar__items">
             <i className=" sidebar__items fas fa-home" />
           </Link>
         </li>
