@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vscodefolio/static/css/main.158a9f98.css",
-    "main.js": "/vscodefolio/static/js/main.3606bdd1.js",
+    "main.js": "/vscodefolio/static/js/main.d2fb8188.js",
     "static/js/845.a3d02275.chunk.js": "/vscodefolio/static/js/845.a3d02275.chunk.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
     "static/media/melody.wav": "/vscodefolio/static/media/melody.ad45d3897813e08db0a8.wav",
@@ -17,12 +17,12 @@
     "static/media/morsecode.png": "/vscodefolio/static/media/morsecode.c62cfdef97c96d7cfa3d.png",
     "index.html": "/vscodefolio/index.html",
     "main.158a9f98.css.map": "/vscodefolio/static/css/main.158a9f98.css.map",
-    "main.3606bdd1.js.map": "/vscodefolio/static/js/main.3606bdd1.js.map",
+    "main.d2fb8188.js.map": "/vscodefolio/static/js/main.d2fb8188.js.map",
     "845.a3d02275.chunk.js.map": "/vscodefolio/static/js/845.a3d02275.chunk.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.158a9f98.css",
-    "static/js/main.3606bdd1.js"
+    "static/js/main.d2fb8188.js"
   ]
 }
