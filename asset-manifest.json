@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/vscodefolio/static/css/main.158a9f98.css",
-    "main.js": "/vscodefolio/static/js/main.0dcd4186.js",
+    "main.js": "/vscodefolio/static/js/main.f91f0b60.js",
+    "static/js/845.a3d02275.chunk.js": "/vscodefolio/static/js/845.a3d02275.chunk.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
+    "static/media/onepiece.wav": "/vscodefolio/static/media/onepiece.12b68ff6891d07084d98.wav",
     "static/media/client-project.png": "/vscodefolio/static/media/client-project.ae8444141ff81b11e0bb.png",
     "static/media/punkapi.png": "/vscodefolio/static/media/punkapi.8ecfa1a4400603bd4e23.png",
     "static/media/fullstack-project.png": "/vscodefolio/static/media/fullstack-project.4f0ca6cd8f8bf7c34e4c.png",
@@ -15,11 +17,12 @@
     "static/media/morsecode.png": "/vscodefolio/static/media/morsecode.c62cfdef97c96d7cfa3d.png",
     "index.html": "/vscodefolio/index.html",
     "main.158a9f98.css.map": "/vscodefolio/static/css/main.158a9f98.css.map",
-    "main.0dcd4186.js.map": "/vscodefolio/static/js/main.0dcd4186.js.map",
+    "main.f91f0b60.js.map": "/vscodefolio/static/js/main.f91f0b60.js.map",
+    "845.a3d02275.chunk.js.map": "/vscodefolio/static/js/845.a3d02275.chunk.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.158a9f98.css",
-    "static/js/main.0dcd4186.js"
+    "static/js/main.f91f0b60.js"
   ]
 }
