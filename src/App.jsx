@@ -21,7 +21,7 @@ function App() {
         <Nav />
         <SideBar />
         <Routes>
-          <Route path="/vscodefolio" element={<Home/>}/>
+          <Route path="/vscodefolio/" element={<Home/>}/>
           <Route path="/Experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />

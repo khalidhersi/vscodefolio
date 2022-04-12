@@ -1,23 +1,27 @@
 import React from "react";
 import "./SideBar.scss";
 import { Link } from "react-router-dom";
+import click from "../../assets/data/click.wav";
+import useSound from "use-sound";
 
 const SideBar = () => {
+  const [play] = useSound(click, { volume: 0.25 });
+
   return (
     <div className="sidebar">
       <ul className="sidebar__menu">
         <li>
-          <Link to="/vscodefolio" className="sidebar__items">
+          <Link to="/vscodefolio/" onClick={play()} className="sidebar__items">
             <i className=" sidebar__items fas fa-home" />
           </Link>
         </li>
         <li>
-          <Link to="/Experiences" className="sidebar__items">
+          <Link to="/Experiences" onClick={play()} className="sidebar__items">
             <i className="sidebar__icon fas fa-user-graduate" />
           </Link>
         </li>
         <li>
-          <a
+          <a onClick={play()}
             href="https://github.com/khalidhersi"
             target="_blank"
             className="sidebar__items"
@@ -26,7 +30,7 @@ const SideBar = () => {
           </a>
         </li>
         <li>
-          <a
+          <a onClick={play()}
             href="https://www.linkedin.com/in/khalid-hersi-a907a4170/"
             target="_blank"
             className="sidebar__items"
@@ -36,6 +40,7 @@ const SideBar = () => {
         </li>
         <li>
           <Link
+          onClick={play()}
             to="../../assets/data/Khalid-Hersi-Profile.pptx"
             target="_blank"
             download
