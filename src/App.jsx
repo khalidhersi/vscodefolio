@@ -9,15 +9,27 @@ import Footer from "./Components/Footer/Footer";
 import SideBar from "./Components/SideBar/SideBar";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import useSound from "use-sound";
+import onePieceSong from "./assets/data/onepiece.wav";
+
 
 function App() {
+
+    const [play] = useSound(onePieceSong, { volume: 0.25});
+
+
+
   return (
     <Router>
-      <div className="app">
+      <div className="app" onClick={play()}>
         <Nav />
         <SideBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home 
+          // sound={SongOn()}
+          // word={word}
+          // toggleSong={toggleSong} 
+          />} />
           <Route path="/Experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
