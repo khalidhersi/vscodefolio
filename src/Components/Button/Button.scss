@@ -11,8 +11,7 @@
 .secondary {
   background-color: $accent-color;
 }
-.primary{
-
+.primary {
   background-color: $accent-color;
 }
 
@@ -22,7 +21,7 @@
     top: 3em;
     font-size: 0.5em;
   }
-  .primary{
+  .primary {
     position: relative;
     bottom: 22.8rem;
     width: 100%;
@@ -38,11 +37,11 @@
     bottom: 10em;
     font-size: 0.5em;
   }
-  .primary{
+  .primary {
     position: relative;
     top: 30rem;
-    width: 100%; 
-    min-width: fit-content;   
+    width: 100%;
+    min-width: fit-content;
     height: fit-content;
     font-size: 2em;
     font-weight: bold;
@@ -50,12 +49,10 @@
 }
 @media screen and (min-width: 800px) {
   .secondary {
-
   }
-  .primary{
+  .primary {
     position: relative;
     top: 32.5rem;
     font-size: 1.5em;
-    
   }
 }

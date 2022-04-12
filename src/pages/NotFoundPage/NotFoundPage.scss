@@ -1,33 +1,32 @@
 @import "../../assets/styles/variables.scss";
 
 @media screen and (min-width: 320px) {
+  .error__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 6em;
+    right: 0em;
 
-.error__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  top: 6em;
-  right: 0em;
-
-  h2 {
-    color: $accent-color;
-    font-size: 2.143em;
-  }
-  &__image {
-    width: auto;
-    height: 25vh;
-    &__reflection {
-      position: absolute;
-      top: 16.5em;
+    h2 {
+      color: $accent-color;
+      font-size: 2.143em;
+    }
+    &__image {
       width: auto;
       height: 25vh;
-      transform: rotate(0.5turn);
+      &__reflection {
+        position: absolute;
+        top: 16.5em;
+        width: auto;
+        height: 25vh;
+        transform: rotate(0.5turn);
+      }
     }
   }
-}
 }
 
 @media screen and (min-width: 520px) {
@@ -35,7 +34,7 @@
     position: relative;
     top: 2rem;
     left: 2em;
-    h2{
+    h2 {
       font-size: 2.3em;
     }
     &__image {
@@ -56,7 +55,7 @@
     position: relative;
     top: 1rem;
     left: 1em;
-    h2{
+    h2 {
       font-size: 5em;
     }
     &__image {

@@ -12,12 +12,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import onePieceSong from "./assets/data/onepiece.wav";
 
-
 function App() {
-
-    const [play] = useSound(onePieceSong, { volume: 0.25});
-
-
+  const [play] = useSound(onePieceSong, { volume: 0.25 });
 
   return (
     <Router>
@@ -25,11 +21,16 @@ function App() {
         <Nav />
         <SideBar />
         <Routes>
-          <Route path="/" element={<Home 
-          // sound={SongOn()}
-          // word={word}
-          // toggleSong={toggleSong} 
-          />} />
+          <Route
+            path="/"
+            element={
+              <Home
+              // sound={SongOn()}
+              // word={word}
+              // toggleSong={toggleSong}
+              />
+            }
+          />
           <Route path="/Experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />

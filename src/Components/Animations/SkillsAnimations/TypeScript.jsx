@@ -4,7 +4,11 @@ import styled, { keyframes } from "styled-components";
 const TupeScript = () => {
   return (
     <Wrapper className="skills__container__item">
-      <img class="skills__container__item__icon" id="typescript" src="https://img.icons8.com/material/106/d8d8d8/typescript.png"/>
+      <img
+        class="skills__container__item__icon"
+        id="typescript"
+        src="https://img.icons8.com/material/106/d8d8d8/typescript.png"
+      />
       <p class="skills__container__item__desc">TypeScript</p>
     </Wrapper>
   );

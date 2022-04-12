@@ -61,13 +61,14 @@
           padding: 0px 20px;
           top: 0;
           right: 0.05em;
-          border-radius: 30px;          overflow-y: auto;
+          border-radius: 30px;
+          overflow-y: auto;
           background: rgba(black, 0.8);
           white-space: pre-line;
           display: flex;
           flex-direction: column;
           text-align: center;
-          
+
           &__heading {
             font-size: 1.5rem;
             font-weight: bold;
@@ -173,14 +174,13 @@
             position: relative;
             left: 20em;
           }
-          a{
+          a {
             z-index: 10000;
             position: fixed;
             top: 32%;
             left: 40%;
             width: 20%;
             height: 4em;
-
           }
         }
       }
@@ -190,16 +190,11 @@
 
 @media screen and (min-width: 800px) {
   .carousel__container {
-
     .carousel {
-    
-
       &__image {
       }
 
       &__arrow {
-
-
         &:hover {
           cursor: pointer;
         }
@@ -207,16 +202,12 @@
 
       &__content {
         &--button {
-
           &__container {
-
           }
         }
 
         &--text {
-
           &__heading {
-
           }
           &__description {
             position: relative;
@@ -225,13 +216,10 @@
           }
         }
         &__cross {
-
         }
-        a{
-
+        a {
         }
       }
     }
   }
 }
-

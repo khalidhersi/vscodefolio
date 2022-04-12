@@ -1,7 +1,7 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/_typography";
 
-.skills { 
+.skills {
   z-index: 1;
   position: relative;
   top: 1em;
@@ -40,7 +40,7 @@
       }
     }
   }
-  #typescript{
+  #typescript {
     width: 5rem;
   }
 }
@@ -71,12 +71,12 @@
       }
     }
   }
-  #react-testing-library{
-    &__container{
-    position: relative;
-    top: 1.6rem;
+  #react-testing-library {
+    &__container {
+      position: relative;
+      top: 1.6rem;
     }
-    &__text{
+    &__text {
       font-size: 1.19rem;
     }
   }
@@ -96,7 +96,7 @@
       font-size: 4.3rem;
       text-align: center;
     }
-    &__container{
+    &__container {
       position: relative;
       left: 4em;
     }
@@ -117,10 +117,10 @@
       margin-right: 0.5em;
     }
   }
-  #react-testing-library{
-    &__container{
-    position: relative;
-    top: 0rem;
+  #react-testing-library {
+    &__container {
+      position: relative;
+      top: 0rem;
     }
   }
 }

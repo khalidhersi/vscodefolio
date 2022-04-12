@@ -4,13 +4,11 @@ import Typewriter from "typewriter-effect";
 import TextAnimation from "../../Components/TextAnimation/TextAnimation";
 import NameTextAnimation from "../../Components/NameTextAnimation/NameTextAnimation";
 import LastNameAnimation from "../../Components/LastNameAnimation/LastNameAnimation";
- import useSound from "use-sound";
- import onePieceSong from "../../assets/data/onepiece.wav";
+import useSound from "use-sound";
+import onePieceSong from "../../assets/data/onepiece.wav";
 
 const Home = () => {
-
-
-    const [play] = useSound(onePieceSong, { volume: 0.25 });
+  const [play] = useSound(onePieceSong, { volume: 0.25 });
 
   return (
     <section className="landing sections">

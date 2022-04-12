@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 3.0s ease-in 1.1s both;
+  animation: ${moveInDown} 3s ease-in 1.1s both;
 `;
 
 export default SpringBoot;

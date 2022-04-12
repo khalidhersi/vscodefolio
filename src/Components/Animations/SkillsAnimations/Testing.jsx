@@ -3,9 +3,14 @@ import styled, { keyframes } from "styled-components";
 
 const Testing = () => {
   return (
-    <Wrapper className="skills__container__item" id="react-testing-library__container">
+    <Wrapper
+      className="skills__container__item"
+      id="react-testing-library__container"
+    >
       <i class="skills__container__item__icon fa fa-vial"></i>
-      <p class="skills__container__item__desc" id="react-testing-library__text">React Testing</p>
+      <p class="skills__container__item__desc" id="react-testing-library__text">
+        React Testing
+      </p>
     </Wrapper>
   );
 };

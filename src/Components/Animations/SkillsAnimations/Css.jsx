@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
- 
+
 const Css = () => {
   return (
     <Wrapper className="skills__container__item">

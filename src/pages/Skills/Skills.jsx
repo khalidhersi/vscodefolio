@@ -56,7 +56,7 @@ const Skills = () => {
           <Python />
         </div>
         <div class="skills__container__item">
-          <Testing  />
+          <Testing />
         </div>
         <div class="skills__container__item">
           <TypeScript />

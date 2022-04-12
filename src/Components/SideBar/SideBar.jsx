@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <ul className="sidebar__menu"> 
+      <ul className="sidebar__menu">
         <li>
           <Link to="/" className="sidebar__items">
             <i className=" sidebar__items fas fa-home" />
@@ -39,7 +39,8 @@ const SideBar = () => {
             to="../../assets/data/Khalid-Hersi-Profile.pptx"
             target="_blank"
             download
-            className="sidebar__items">
+            className="sidebar__items"
+          >
             <i className="sidebar__icon fas fa-file-alt" />
           </Link>
         </li>

@@ -44,65 +44,64 @@ const Carousel = () => {
       title: "Iphone Calculator clone",
       description:
         "This is a Iphone Calculator clone I made using vanilla JavaScript. Using DOM manipulation i was able to create a fully functioning calculator that handles basic arithmetic.",
-        GithubLink: "https://khalidhersi.github.io/Calculator/"
+      GithubLink: "https://khalidhersi.github.io/Calculator/",
     },
     {
       image: minesweeper,
       title: "MineSweeper clone",
       description:
         "I made a MineSweeper clone using vanilla JavaScript. It cointains a Timeer that counts down and ends the game at 0; the game also ends when a bomb is clicked just like the original MineSweeper game.",
-        GithubLink: "https://khalidhersi.github.io/MineSweeper/"    
-      },
-      {
-        image: morseCode,
-        title: "Morse Code Translator",
-        description:
-          "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
-          GithubLink: "https://khalidhersi.github.io/Morse-code-translator/"
-        },
-      {
-        image: earWorm,
-        title: "Ear Worm React App",
-        description:
-          "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
-          GithubLink: "https://github.com/khalidhersi/react-code-along"
-  
-        },
+      GithubLink: "https://khalidhersi.github.io/MineSweeper/",
+    },
+    {
+      image: morseCode,
+      title: "Morse Code Translator",
+      description:
+        "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
+      GithubLink: "https://khalidhersi.github.io/Morse-code-translator/",
+    },
+    {
+      image: earWorm,
+      title: "Ear Worm React App",
+      description:
+        "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
+      GithubLink: "https://github.com/khalidhersi/react-code-along",
+    },
     {
       image: ticketTracker,
       title: "Ticket Tracker",
       description:
         "After learning how to immplament the state hook in react, I was able to create a simple Ticket Tracker that has the added bonus of being able to map over a data file of employees and return info on of all the employees in the company.",
-        GithubLink: "https://khalidhersi.github.io/ticket-tracker-v2/"
-      },
+      GithubLink: "https://khalidhersi.github.io/ticket-tracker-v2/",
+    },
     {
       image: punkApi,
       title: "Punk API",
       description:
         "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info.",
-        GithubLink: "https://khalidhersi.github.io/Punk-API/"
-      },
+      GithubLink: "https://khalidhersi.github.io/Punk-API/",
+    },
     {
       image: clientProject,
       title: "Orchestra of the Age of Enlightenment: Client Project",
       description:
         'This is a client project for the "Orchestra of the Age of Enlightenment". Working in an agile team, my team worked on the frontend; creating a react app using mobile first design to produce an amazing UI.',
-        GithubLink: "https://nology-tech.github.io/oae-event-programme/6/home"
-      },
+      GithubLink: "https://nology-tech.github.io/oae-event-programme/6/home",
+    },
     {
       image: vueClone,
       title: "Full-Stack Project: Vue Clone",
       description:
         "This fullstack project works using a Spring BootJava Backend & a React Frontend. It is a Vue Cinema Clone, holding a list of movies and thier information on the server.",
-        GithubLink: "https://khalidhersi.github.io/React-FrontEnd/"
-      },
-      {
-        image: wordleClone,
-        title: "Wordle Clone",
-        description:
-          "This a Wordle Clone I created using React. This game works using multiple state hooks to determine whether the letters you enter are the same as the hidden word.",
-          GithubLink: "https://khalidhersi.github.io/wordle/"
-        },
+      GithubLink: "https://khalidhersi.github.io/React-FrontEnd/",
+    },
+    {
+      image: wordleClone,
+      title: "Wordle Clone",
+      description:
+        "This a Wordle Clone I created using React. This game works using multiple state hooks to determine whether the letters you enter are the same as the hidden word.",
+      GithubLink: "https://khalidhersi.github.io/wordle/",
+    },
   ];
 
   const buttonJSX = (
@@ -127,7 +126,9 @@ const Carousel = () => {
       <h3 className="carousel__content--text__heading">
         {projectInfoArr[counter].title}
       </h3>
-      <a href={projectInfoArr[counter].GithubLink} target="_blank"><Button buttonText={"Demo"} isSecondary={false} /></a>
+      <a href={projectInfoArr[counter].GithubLink} target="_blank">
+        <Button buttonText={"Demo"} isSecondary={false} />
+      </a>
       <p className="carousel__content--text__description">
         {projectInfoArr[counter].description}
       </p>
