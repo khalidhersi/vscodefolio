@@ -22,6 +22,7 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="/vscodefolio/" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/Experiences" element={<Experiences />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
