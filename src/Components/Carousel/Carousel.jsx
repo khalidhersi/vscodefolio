@@ -13,6 +13,7 @@ import Button from "../Button/Button";
 import vueClone from "../../assets/images/fullstack-project.png";
 import ticketTracker from "../../assets/images/ticket-tracker.png";
 import wordleClone from "../../assets/images/wordle.png";
+import dodge from "../../assets/images/dodge.png";
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -101,6 +102,13 @@ const Carousel = () => {
       description:
         "This a Wordle Clone I created using React. This game works using multiple state hooks to determine whether the letters you enter are the same as the hidden word.",
       GithubLink: "https://khalidhersi.github.io/wordle/",
+    },
+    {
+      image: dodge,
+      title: "Dodge: My Indie Java Game",
+      description:
+        "Dodge is a game I created to test out my Java skills. The game works to train your reaction time by dodging differnt shaped objects. Try it out! ",
+      GithubLink: "https://github.com/khalidhersi/Dodge--java",
     },
   ];
 
