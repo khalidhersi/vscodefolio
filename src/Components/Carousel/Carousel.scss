@@ -1,4 +1,17 @@
 @import "../../assets/styles/variables";
+.carousel__container {
+
+  .carousel {
+
+    &__image {
+      box-shadow: 0px 10px 20px rgba($body-color, 0.25);
+      display: block;
+      width: 50%;
+      border-radius: 15px;
+      margin: 0 10px;
+    }
+  }
+}
 
 @media screen and (min-width: 320px) {
   .carousel__container {
@@ -20,6 +33,7 @@
         width: 50%;
         border-radius: 15px;
         margin: 0 10px;
+        min-height: 17.875rem;
       }
 
       &__arrow {
@@ -125,6 +139,7 @@
           width: 17rem;
           border-radius: 15px;
           margin: 0 10px;
+          min-height: 32.875rem;
         }
 
         &__arrow {
@@ -192,6 +207,7 @@
   .carousel__container {
     .carousel {
       &__image {
+        min-height: 33.875rem;
       }
 
       &__arrow {

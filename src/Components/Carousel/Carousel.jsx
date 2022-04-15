@@ -14,6 +14,7 @@ import vueClone from "../../assets/images/fullstack-project.png";
 import ticketTracker from "../../assets/images/ticket-tracker.png";
 import wordleClone from "../../assets/images/wordle.png";
 import dodge from "../../assets/images/dodge.png";
+import librarySystem from "../../assets/images/librarySystem.png"
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -95,6 +96,13 @@ const Carousel = () => {
       description:
         "This fullstack project works using a Spring BootJava Backend & a React Frontend. It is a Vue Cinema Clone, holding a list of movies and thier information on the server.",
       GithubLink: "https://khalidhersi.github.io/React-FrontEnd/",
+    },
+    {
+      image: librarySystem,
+      title: "Java Console Library Booking System",
+      description:
+        "A Java Console Project for Borrowing Books in a library and displaying relavent Book data to the console. I used the provided .CSV file as a data source and extrated all the data to be able to be listed in the console.",
+      GithubLink: "https://github.com/khalidhersi/Library-Book-Loaning-System-Java",
     },
     {
       image: wordleClone,
