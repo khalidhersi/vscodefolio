@@ -17,7 +17,7 @@ const Home = () => {
         <TextAnimation />
         <NameTextAnimation />
         <LastNameAnimation />
-        <p className="landing__header__desc">
+        <div className="landing__header__desc">
           <span className="text-accent">
             <Typewriter
               onInit={(typewriter) => {
@@ -38,7 +38,7 @@ const Home = () => {
               typewriter.pauseFor(8700).typeString("based in London").start();
             }}
           />
-        </p>
+          </div>
       </header>
     </section>
   );
