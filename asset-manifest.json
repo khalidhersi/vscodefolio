@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vscodefolio/static/css/main.704c7fb7.css",
-    "main.js": "/vscodefolio/static/js/main.ae69a58c.js",
+    "main.js": "/vscodefolio/static/js/main.7afb0fba.js",
     "static/js/845.a3d02275.chunk.js": "/vscodefolio/static/js/845.a3d02275.chunk.js",
     "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
     "static/media/melody.wav": "/vscodefolio/static/media/melody.ad45d3897813e08db0a8.wav",
@@ -19,12 +19,12 @@
     "static/media/dodge.png": "/vscodefolio/static/media/dodge.488413a2da6b228f9057.png",
     "index.html": "/vscodefolio/index.html",
     "main.704c7fb7.css.map": "/vscodefolio/static/css/main.704c7fb7.css.map",
-    "main.ae69a58c.js.map": "/vscodefolio/static/js/main.ae69a58c.js.map",
+    "main.7afb0fba.js.map": "/vscodefolio/static/js/main.7afb0fba.js.map",
     "845.a3d02275.chunk.js.map": "/vscodefolio/static/js/845.a3d02275.chunk.js.map",
     "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.704c7fb7.css",
-    "static/js/main.ae69a58c.js"
+    "static/js/main.7afb0fba.js"
   ]
 }
