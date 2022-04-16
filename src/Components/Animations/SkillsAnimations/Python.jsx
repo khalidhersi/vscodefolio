@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const Python = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i class="skills__container__item__icon fab fa-python"></i>
-      <p class="skills__container__item__desc">Python</p>
+      <i className="skills__container__item__icon fab fa-python"></i>
+      <p className="skills__container__item__desc">Python</p>
     </Wrapper>
   );
 };

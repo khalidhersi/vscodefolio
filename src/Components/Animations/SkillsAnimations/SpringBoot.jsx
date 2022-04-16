@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const SpringBoot = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i class="skills__container__item__icon fa fa-leaf"></i>
-      <p class="skills__container__item__desc">SpringBoot</p>
+      <i className="skills__container__item__icon fa fa-leaf"></i>
+      <p className="skills__container__item__desc">SpringBoot</p>
     </Wrapper>
   );
 };

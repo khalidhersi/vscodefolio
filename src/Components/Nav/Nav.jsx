@@ -8,30 +8,30 @@ const Nav = () => {
       <ul className="navbar__menu">
         <Link to="/about" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-sass" id="sass" />
-          <Link to="/about" className="navbar__menu__item">
+          <span href="/about" className="navbar__menu__item">
             About.scss
-          </Link>
+          </span>
         </Link>
         <Link to="/skills" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-react fa-spin" id="react" />
-          <Link to="/skills" className="navbar__menu__item">
+          <span href="/skills" className="navbar__menu__item">
             Skills.jsx
-          </Link>
+          </span>
         </Link>
-        <Link to="/vscodefolio/" className="navbar__menu__list" id="home">
+        <span href="/vscodefolio/" className="navbar__menu__list" id="home">
           <i className="navbar__menu__icon fas fa-home" />
-        </Link>
+        </span>
         <Link to="/projects" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-npm" id="json" />
-          <Link to="/projects" className="navbar__menu__item">
+          <span href="/projects" className="navbar__menu__item">
             Projects.json
-          </Link>
+          </span>
         </Link>
         <Link to="/Experiences" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-markdown" id="markdown" />
-          <Link to="/Experiences" className="navbar__menu__item">
+          <span href="/Experiences" className="navbar__menu__item">
             Experiences.md
-          </Link>
+          </span>
         </Link>
       </ul>
     </nav>

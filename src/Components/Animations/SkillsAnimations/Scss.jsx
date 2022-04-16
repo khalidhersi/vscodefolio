@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const Scss = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i class="skills__container__item__icon fab fa-sass"></i>
-      <p class="skills__container__item__desc">Sass</p>
+      <i className="skills__container__item__icon fab fa-sass"></i>
+      <p className="skills__container__item__desc">Sass</p>
     </Wrapper>
   );
 };

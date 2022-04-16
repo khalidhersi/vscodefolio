@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const Html = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i class="skills__container__item__icon fab fa-html5"></i>
-      <p class="skills__container__item__desc">HTML</p>
+      <i className="skills__container__item__icon fab fa-html5"></i>
+      <p className="skills__container__item__desc">HTML</p>
     </Wrapper>
   );
 };

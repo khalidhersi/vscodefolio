@@ -31,40 +31,40 @@ const Skills = () => {
         />
       </h2>
       <div className="skills__container">
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Html />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Css />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Scss />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <JS />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <ReactA />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Java />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Bootstrap />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Python />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <Testing />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <TypeScript />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <MySQL />
         </div>
-        <div class="skills__container__item">
+        <div className="skills__container__item">
           <SpringBoot />
         </div>
       </div>

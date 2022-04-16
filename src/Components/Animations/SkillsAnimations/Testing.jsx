@@ -7,8 +7,8 @@ const Testing = () => {
       className="skills__container__item"
       id="react-testing-library__container"
     >
-      <i class="skills__container__item__icon fa fa-vial"></i>
-      <p class="skills__container__item__desc" id="react-testing-library__text">
+      <i className="skills__container__item__icon fa fa-vial"></i>
+      <p className="skills__container__item__desc" id="react-testing-library__text">
         React Testing
       </p>
     </Wrapper>

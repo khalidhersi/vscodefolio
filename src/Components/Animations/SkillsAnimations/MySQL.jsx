@@ -4,8 +4,8 @@ import styled, { keyframes } from "styled-components";
 const MySQL = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i class="skills__container__item__icon fa fa-database"></i>
-      <p class="skills__container__item__desc">MySQL</p>
+      <i className="skills__container__item__icon fa fa-database"></i>
+      <p className="skills__container__item__desc">MySQL</p>
     </Wrapper>
   );
 };
