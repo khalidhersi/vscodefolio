@@ -21,14 +21,14 @@ function App() {
         <Nav />
         <SideBar />
         <Routes>
-          <Route path="/vscodefolio/" element={<Home/>}/>
           <Route path="/" element={<Home/>}/>
-          <Route path="/Experiences" element={<Experiences />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/NotFoundPage" element={<NotFoundPage />} />
-          <Route path="/footer" element={<Footer />} />
+          <Route path="/vscodefolio/" element={<Home/>}/>
+          <Route path="/vscodefolio/Experiences" element={<Experiences />} />
+          <Route path="/vscodefolio/about" element={<About />} />
+          <Route path="/vscodefolio/skills" element={<Skills />} />
+          <Route path="/vscodefolio/projects" element={<Projects />} />
+          <Route path="/vscodefolio/NotFoundPage" element={<NotFoundPage />} />
+          <Route path="/vscodefolio/footer" element={<Footer />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

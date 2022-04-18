@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import "./Carousel.scss";
 import leftArrow from "../../assets/images/left-arrow.png";
 import rightArrow from "../../assets/images/right-arrow.png";
+import whiteCross from "../../assets/images/white-cross.png";
+import Button from "../Button/Button";
 import calculator from "../../assets/images/Calculator.png";
 import minesweeper from "../../assets/images/minesweeper.png";
 import punkApi from "../../assets/images/punkapi.png";
 import morseCode from "../../assets/images/morsecode.png";
 import clientProject from "../../assets/images/client-project.png";
 import earWorm from "../../assets/images/ear-worm.png";
-import whiteCross from "../../assets/images/white-cross.png";
-import Button from "../Button/Button";
 import vueClone from "../../assets/images/fullstack-project.png";
 import ticketTracker from "../../assets/images/ticket-tracker.png";
 import wordleClone from "../../assets/images/wordle.png";
 import dodge from "../../assets/images/dodge.png";
 import librarySystem from "../../assets/images/librarySystem.png"
+import projectInfoArr from "../../assets/data/data"
 
 const Carousel = () => {
   const [counter, setCounter] = useState(0);
@@ -40,7 +41,7 @@ const Carousel = () => {
     setShowText(!showText);
   };
 
-  const projectInfoArr = [
+const projectInfoArr = [
     {
       image: calculator,
       title: "Iphone Calculator clone",
@@ -120,6 +121,7 @@ const Carousel = () => {
     },
   ];
 
+
   const buttonJSX = (
     <div className="carousel__content carousel__content--button">
       <div
@@ -162,7 +164,7 @@ const Carousel = () => {
         />
         <img
           src={projectInfoArr[counter].image}
-          alt=""
+          alt="project image"
           className="carousel__image"
         />
         {showText ? textJSX : buttonJSX}
