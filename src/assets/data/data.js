@@ -89,7 +89,6 @@
 //       GithubLink: "https://github.com/khalidhersi/Dodge--java",
 //     },
 //   ];
-
 //   export default projectInfoArr;
 
   /* <article className="project project-one" data-aos="fade-right">
