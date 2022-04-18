@@ -18,9 +18,9 @@ const Nav = () => {
             Skills.jsx
           </span>
         </Link>
-        <span href="/vscodefolio/" className="navbar__menu__list" id="home">
+        <Link to="/vscodefolio/" className="navbar__menu__list" id="home">
           <i className="navbar__menu__icon fas fa-home" />
-        </span>
+        </Link>
         <Link to="/vscodefolio/projects" className="navbar__menu__list">
           <i className="navbar__menu__icon fab fa-npm" id="json" />
           <span href="/projects" className="navbar__menu__item">
