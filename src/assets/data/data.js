@@ -91,7 +91,7 @@
 //   ];
 //   export default projectInfoArr;
 
-  /* <article className="project project-one" data-aos="fade-right">
+/* <article className="project project-one" data-aos="fade-right">
     <img className="project-image-one" src="./assets/allLights.jpg" alt="project-photo">
     <div className="project-description end">
         <p><b>AllLights - shopping cart</b></p>
@@ -114,4 +114,3 @@ const projects = [
     morsecode  
 ] 
 */
-

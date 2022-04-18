@@ -38,7 +38,7 @@ const Home = () => {
               typewriter.pauseFor(8700).typeString("based in London").start();
             }}
           />
-          </div>
+        </div>
       </header>
     </section>
   );

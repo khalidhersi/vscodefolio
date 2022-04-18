@@ -6,7 +6,10 @@ import Typewriter from "typewriter-effect";
 const NotFoundPage = () => {
   return (
     <div className="error__container">
-      <img className="error__container__image" src="https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/PageNotFound.png" />
+      <img
+        className="error__container__image"
+        src="https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/PageNotFound.png"
+      />
       <h2>
         <Typewriter
           onInit={(typewriter) => {
