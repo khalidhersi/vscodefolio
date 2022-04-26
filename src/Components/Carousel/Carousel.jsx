@@ -87,7 +87,7 @@ const Carousel = () => {
       image: "https://raw.githubusercontent.com/khalidhersi/punk-api-v2/main/src/assets/images/mobile-view.png",
       title: "Punk API",
       description: "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info. Using .filter to filter the api arrays to search for different beers.",
-      GithubLink: "https://khalidhersi.github.io/Punk-API-v2/"
+      GithubLink: "https://khalidhersi.github.io/punk-api-v2/"
     },
     {
       image:
