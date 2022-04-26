@@ -2,7 +2,7 @@
 @import "../../assets/styles/typography";
 
 .about {
-  height: 100vh;
+  height: 120vh;
   position: relative;
   top: 1em;
   &__header {
@@ -27,7 +27,7 @@
     overflow-y: auto;
     position: relative;
     right: 0.5em;
-    top: 2rem;
+    top: 1.3rem;
     &__header {
       position: relative;
       top: 0.2em;
@@ -39,7 +39,7 @@
       padding: 3rem 2rem;
       &__text {
         position: relative;
-        bottom: 0.5em;
+        bottom: 1em;
         font-size: 1.27rem;
         text-align: left;
       }

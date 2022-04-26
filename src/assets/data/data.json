@@ -30,10 +30,10 @@
     "GithubLink": "https://khalidhersi.github.io/ticket-tracker-v2/"
   },
   {
-    "image": "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/punkapi.png",
+    "image": "https://raw.githubusercontent.com/khalidhersi/punk-api-v2/main/src/assets/images/mobile-view.png",
     "title": "Punk API",
-    "description": "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info.",
-    "GithubLink": "https://khalidhersi.github.io/Punk-API/"
+    "description": "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info. Using .filter to filter the api arrays to search for different beers.",
+    "GithubLink": "https://khalidhersi.github.io/Punk-API-v2/"
   },
   {
     "image": "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/client-project.png",
