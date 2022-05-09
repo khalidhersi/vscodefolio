@@ -130,6 +130,13 @@ const Carousel = () => {
         "Dodge is a game I created to test out my Java skills. The game works to train your reaction time by dodging differnt shaped objects. Try it out! ",
       GithubLink: "https://github.com/khalidhersi/Dodge--java",
     },
+    {
+      image: "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/tic-tac-toe.png",
+      title: "Tic-Tac-Toe React",
+      description:
+        "This project was made uses the latest version of React.JS. State Hooks were used to control naughts and crooses being drawn onto the page.",
+      GithubLink: "https://github.com/khalidhersi/tic-tac-toe",
+    },
   ];
 
   const buttonJSX = (
