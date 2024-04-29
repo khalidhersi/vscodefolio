@@ -38,6 +38,10 @@ h6 {
   color: $accent-color;
 }
 
+.text-accent--pink {
+  color: $accent-pink-color;
+}
+
 @media screen and (min-width: 768px) {
   h2,
   .landing__header__title {

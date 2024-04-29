@@ -1,18 +1,18 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const Java = () => {
+const Git = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i className="skills__container__item__icon fab fa-java"></i>
-      <p className="skills__container__item__desc">Java</p>
+      <i className="skills__container__item__icon fab fa-git"></i>
+      <p className="skills__container__item__desc">Git</p>
     </Wrapper>
   );
 };
-const moveInDown = keyframes`
+const moveInUp = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-15rem);
+    transform: translateY(15rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 0.8s ease-in 0.4s both;
+  animation: ${moveInUp} 0.8s ease-in 1.2s both; 
 `;
 
-export default Java;
+export default Git;
