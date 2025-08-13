@@ -1,20 +1,21 @@
 import React from "react";
 import "./Skills.scss";
-import Html from "../../Components/Animations/SkillsAnimations/Html";
-import Css from "../../Components/Animations/SkillsAnimations/Css";
+import Linux from "../../Components/Animations/SkillsAnimations/Linux";
+import Docker from "../../Components/Animations/SkillsAnimations/Docker";
 import Net from "../../Components/Animations/SkillsAnimations/Net";
 import Testing from "../../Components/Animations/SkillsAnimations/Testing";
-import Scss from "../../Components/Animations/SkillsAnimations/Scss";
 import TypeScript from "../../Components/Animations/SkillsAnimations/TypeScript";
 import JS from "../../Components/Animations/SkillsAnimations/JS";
 import ReactA from "../../Components/Animations/SkillsAnimations/ReactA";
 import SpringBoot from "../../Components/Animations/SkillsAnimations/SpringBoot";
 import Java from "../../Components/Animations/SkillsAnimations/Java";
-import Bootstrap from "../../Components/Animations/SkillsAnimations/Bootstrap";
 import Python from "../../Components/Animations/SkillsAnimations/Python";
 import SQL from "../../Components/Animations/SkillsAnimations/SQL";
 import Git from "../../Components/Animations/SkillsAnimations/Git";
 import AzureCloud from "../../Components/Animations/SkillsAnimations/AzureCloud";
+import Terraform from "../../Components/Animations/SkillsAnimations/Terraform";
+import Aws from "../../Components/Animations/SkillsAnimations/Aws";
+import K8 from "../../Components/Animations/SkillsAnimations/K8";
 
 const Skills = () => {
   return (
@@ -39,16 +40,16 @@ const Skills = () => {
           <AzureCloud />
         </div>
         <div className="skills__container__item">
-          <Html />
+          <Linux />
         </div>
         <div className="skills__container__item">
-          <Css />
+          <Docker />
         </div>
         <div className="skills__container__item">
           <Git />
         </div>
         <div className="skills__container__item">
-          <Scss />
+          <Aws />
         </div>
         <div className="skills__container__item">
           <SQL />
@@ -57,13 +58,13 @@ const Skills = () => {
           <Python />
         </div>
         <div className="skills__container__item">
-          <SpringBoot />
+          <K8 />
         </div>
         <div className="skills__container__item">
           <Testing />
         </div>
         <div className="skills__container__item">
-          <Bootstrap />
+          <Terraform />
         </div>
       </div>
     </section>
