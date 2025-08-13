@@ -9,10 +9,10 @@ const Css = () => {
     </Wrapper>
   );
 };
-const moveInDown = keyframes`
+const moveInUp = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-50rem);
+    transform: translateY(15rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1s ease-in 1.1s both;
+  animation: ${moveInUp} 0.8s ease-in 1.2s both; 
 `;
 
 export default Css;

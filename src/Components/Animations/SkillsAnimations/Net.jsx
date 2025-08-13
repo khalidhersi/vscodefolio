@@ -1,11 +1,11 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const Java = () => {
+const Net = () => {
   return (
     <Wrapper className="skills__container__item">
-      <i className="skills__container__item__icon fab fa-java"></i>
-      <p className="skills__container__item__desc">Java</p>
+      <i className="skills__container__item__icon fas fa-hashtag"></i>
+      <p className="skills__container__item__desc">.NET</p>
     </Wrapper>
   );
 };
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 0.8s ease-in 0.4s both;
+  animation: ${moveInDown} 0.8s ease-in 0.2s both;
 `;
 
-export default Java;
+export default Net;

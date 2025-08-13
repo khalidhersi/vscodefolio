@@ -3,21 +3,13 @@
 
 .skills {
   z-index: 1;
-  position: relative;
-  top: 1em;
+  height: 100vh;
+
   overflow: hidden;
   text-align: center;
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-    text-align: center;
-    color: $accent-color;
-  }
   &__container {
     position: relative;
-    top: 2em;
+    top: 6em;
     display: flex;
     flex-wrap: wrap;
     min-height: 80vh;
@@ -51,13 +43,6 @@
     position: relative;
     height: 100vh;
     top: 2em;
-    &__header {
-      position: relative;
-      top: 0.3em;
-      left: 0.1em;
-      font-size: 3.5rem;
-      text-align: center;
-    }
     &__container {
       position: relative;
       left: 1em;
@@ -89,13 +74,7 @@
     left: 0.6em;
     top: 1em;
     height: 100vh;
-    &__header {
-      position: relative;
-      top: 0.5em;
-      left: 2rem;
-      font-size: 4.3rem;
-      text-align: center;
-    }
+
     &__container {
       position: relative;
       left: 4em;
@@ -111,11 +90,6 @@
     overflow: hidden;
     height: 100vh;
     top: 1em;
-    &__header {
-      font-size: 5.5rem;
-      position: relative;
-      margin-right: 0.5em;
-    }
   }
   #react-testing-library {
     &__container {

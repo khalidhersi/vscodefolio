@@ -12,7 +12,7 @@ const ReactA = () => {
 const moveInDown = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-110rem);
+    transform: translateY(-15rem);
     }
 
     100% {
@@ -21,7 +21,7 @@ const moveInDown = keyframes`
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 1.6s ease-in 1.1s both;
+  animation: ${moveInDown} 0.8s ease-in 0s both;
 `;
 
 export default ReactA;

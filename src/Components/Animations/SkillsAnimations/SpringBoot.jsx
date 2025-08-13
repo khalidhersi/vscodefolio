@@ -9,19 +9,18 @@ const SpringBoot = () => {
     </Wrapper>
   );
 };
-const moveInDown = keyframes`
+const moveInLeft = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-170rem);
+    transform: translateX(60rem);
     }
 
     100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 3s ease-in 1.1s both;
+  animation: ${moveInLeft} 0.6s ease-in 2s both;
 `;
-
 export default SpringBoot;

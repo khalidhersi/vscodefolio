@@ -10,26 +10,26 @@ const Testing = () => {
       <i className="skills__container__item__icon fa fa-vial"></i>
       <p
         className="skills__container__item__desc"
-        id="react-testing-library__text"
+        id="react-testing-library__text" 
       >
-        React Testing
+        Testing
       </p>
     </Wrapper>
   );
 };
-const moveInDown = keyframes`
+const moveInLeft = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-140rem);
+    transform: translateX(60rem);
     }
 
     100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     }`;
 
 const Wrapper = styled.div`
-  animation: ${moveInDown} 2.4s ease-in 1.1s both;
+  animation: ${moveInLeft} 0.6s ease-in 2s both;
 `;
 
 export default Testing;
