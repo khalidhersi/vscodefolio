@@ -1,196 +1,412 @@
-import React, { useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import "./Carousel.scss";
+
 import leftArrow from "../../assets/images/left-arrow.png";
 import rightArrow from "../../assets/images/right-arrow.png";
-import whiteCross from "../../assets/images/white-cross.png";
 import Button from "../Button/Button";
-import data from "../../assets/data/data.json";
-// import calculator from "../../assets/images/Calculator.png";
-// import minesweeper from "../../assets/images/minesweeper.png";
-// import punkApi from "../../assets/images/punkapi.png";
-// import morseCode from "../../assets/images/morsecode.png";
-// import clientProject from "../../assets/images/client-project.png";
-// import earWorm from "../../assets/images/ear-worm.png";
-// import vueClone from "../../assets/images/fullstack-project.png";
-// import ticketTracker from "../../assets/images/ticket-tracker.png";
-// import wordleClone from "../../assets/images/wordle.png";
-// import dodge from "../../assets/images/dodge.png";
-// import librarySystem from "../../assets/images/librarySystem.png"
-// import projectInfoArr from "../../assets/data/data"
+import dfeLogo from "../../assets/images/dfeLogo.png"
+import searchsmarterlogo from "../../assets/images/searchsmarterlogo.png"
+import OAE from "../../assets/images/OAE.png"
+import jqc from "../../assets/images/jqc.png"
+import atc from "../../assets/images/atc.png"
+import quranapp from "../../assets/images/quranapp.png"
+
+const projects = [
+  // --- Professional ---
+  {
+    id: "funding-calc",
+    title: "GOVUK Department of Education - CFS",
+    description:
+      "Spearheaded React frontend for the Department of Education’s funding calculation system (Agile), impacting 10,000+ users across UK schools, colleges, and universities.",
+    image: dfeLogo,
+    type: "professional",
+    company: "GOVUK Department of Education",
+    date: "Jan 2023 - Present",
+    technologies: ["React 18", "TypeScript", ".NET", "Azure", "Microsoft SQL"],
+    impact: "Built, Maintained & Enhanced Front/Back-end, served 10,000+ users",
+  },
+  {
+    id: "searchsmarter",
+    title: "SearchSmarter Website",
+    description:
+      "Designed and developed the first-ever website for SearchSmarter, a growing SEO company. Implemented modern responsive design improving client acquisition by 50%.",
+    image: searchsmarterlogo,
+    type: "professional",
+    company: "SearchSmarter (Freelance)",
+    date: "May 2024 - Aug 2024",
+    technologies: ["React.js", "Bootstrap", "Node.js", "SEO"],
+    impact: "Improved client acquisition by 100%",
+  },
+  {
+    id: "orchestra-oae",
+    title: "Orchestra of the Age of Enlightenment",
+    description:
+      "Mobile-first React App for Orchestra of the Age of Enlightenment, targeting users over 60 with accessibility features. Increased user engagement by 60%.",
+    image: OAE,
+    type: "professional",
+    company: "_Nology",
+    date: "Sept 2021 - Aug 2022",
+    technologies: ["React", "Accessibility", "Mobile-first"],
+    impact: "Increased user engagement by 60%",
+  },
+  {
+    id: "quran-memorizing-app",
+    title: "Quran Memorizing App",
+    description:
+      "Progressive Nextjs Web App for Qur'an memorization with audio, spaced repetition, and per-ayah tracking. Built to advance my DevOps transition: containerized, Terraform IaC, full AWS CI/CD pipeline.",
+    image: quranapp,
+    type: "personal",
+    date: "May 2025 - Present",
+    technologies: ["Next.js", "Docker", "Terraform", "AWS", "GitHub Actions (CI/CD)",],
+    impact:
+     "Built & maintain E2E Devops: Dockerized app, Terraform IaC, automated AWS CI/CD, zero-downtime deploys."
+  },  
+  {
+    id: "atc-taekwondo",
+    title: "ATC (Amal Taekwondo Club)",
+    description:
+      "Comprehensive website for Amal Taekwondo Club with member management and online registration system, reducing administrative workload by 30%.",
+    image: atc,
+    type: "professional",
+    company: "Amal Taekwondo Club (Freelance)",
+    date: "Nov 2024 - Mar 2025",
+    technologies: ["React.js", "Node.js", "Payment System"],
+    impact: "Reduced administrative workload by 30%",
+  },
+  {
+    id: "jays-construction",
+    title: "Jay's Quality Construction",
+    description:
+      "Delivered a bespoke website increasing client inquiries by over 400% through responsive design and SEO optimization. Modern UI/UX with cutting-edge technologies.",
+    image: jqc,
+    type: "professional",
+    company: "Jay's Quality Construction (Freelance)",
+    date: "Feb 2020 - Sept 2021",
+    technologies: ["React", "Bootstrap", ".NET", "SEO"],
+    impact: "Increased client inquiries by 400%",
+  },
+  {
+    id: "ecommerce-platform",
+    title: "E-commerce Platform",
+    description:
+      "Contributed to high-traffic e-commerce platforms using Java, Spring Boot, and React.js. Optimized backend logic improving response times by 15%.",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=900&fit=crop&crop=center",
+    type: "professional",
+    company: "Cognizant",
+    date: "Aug 2022 - Jan 2023",
+    technologies: ["Java", "Spring Boot", "React.js", "Payment Systems"],
+    impact: "Improved response times by 15%",
+  },
+
+  // --- Personal ---
+  {
+    id: "calculator",
+    title: "iPhone Calculator Clone",
+    description:
+      "Fully functioning calculator using vanilla JavaScript with DOM manipulation for basic arithmetic operations.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/Calculator.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["JavaScript", "HTML", "CSS", "DOM"],
+    githubLink: "https://khalidhersi.github.io/Calculator/",
+    demoLink: "https://khalidhersi.github.io/Calculator/",
+  },
+  {
+    id: "minesweeper",
+    title: "MineSweeper Clone",
+    description:
+      "Classic MineSweeper game with timer functionality and bomb detection logic using vanilla JavaScript.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/minesweeper.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["JavaScript", "Game Logic", "HTML", "CSS"],
+    githubLink: "https://khalidhersi.github.io/MineSweeper/",
+    demoLink: "https://khalidhersi.github.io/MineSweeper/",
+  },
+  {
+    id: "morse-code",
+    title: "Morse Code Translator",
+    description:
+      "Test-driven development approach using Jest for unit testing the morse code translation functionality.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/morsecode.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["JavaScript", "Jest", "TDD", "Testing"],
+    githubLink: "https://khalidhersi.github.io/Morse-code-translator/",
+    demoLink: "https://khalidhersi.github.io/Morse-code-translator/",
+  },
+  {
+    id: "punk-api",
+    title: "Punk API React App",
+    description:
+      "React application fetching data from Punk API with filtering capabilities to search through beer database.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/punk-api-v2/main/src/assets/images/mobile-view.png",
+    type: "personal",
+    date: "2022",
+    technologies: ["React", "API", "JavaScript", "Filtering"],
+    githubLink: "https://khalidhersi.github.io/punk-api-v2/",
+    demoLink: "https://khalidhersi.github.io/punk-api-v2/",
+  },
+  {
+    id: "vue-clone",
+    title: "Vue Cinema Clone (Full-Stack)",
+    description:
+      "Full-stack application with Spring Boot Java backend and React frontend, featuring movie database management.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/fullstack-project.png",
+    type: "personal",
+    date: "2022",
+    technologies: ["React", "Java", "Spring Boot", "Full-Stack"],
+    githubLink: "https://khalidhersi.github.io/React-FrontEnd/",
+    demoLink: "https://khalidhersi.github.io/React-FrontEnd/",
+  },
+  {
+    id: "wordle-clone",
+    title: "Wordle Clone",
+    description:
+      "React-based word guessing game using multiple state hooks for game logic and user interaction.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/wordle.png",
+    type: "personal",
+    date: "2022",
+    technologies: ["React", "Game Logic", "State Management"],
+    githubLink: "https://khalidhersi.github.io/wordle/",
+    demoLink: "https://khalidhersi.github.io/wordle/",
+  },
+  {
+    id: "ticket-tracker",
+    title: "Ticket Tracker",
+    description:
+      "React application with state management for tracking tickets and employee data visualization.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/ticket-tracker.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["React", "State Management", "Data Visualization"],
+    githubLink: "https://khalidhersi.github.io/ticket-tracker-v2/",
+    demoLink: "https://khalidhersi.github.io/ticket-tracker-v2/",
+  },
+  {
+    id: "library-system",
+    title: "Java Library Booking System",
+    description:
+      "Console-based Java application for library book management with CSV data integration.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/librarySystem.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["Java", "CSV", "Console App", "Data Management"],
+    githubLink: "https://github.com/khalidhersi/Library-Book-Loaning-System-Java",
+    demoLink: "https://github.com/khalidhersi/Library-Book-Loaning-System-Java",
+  },
+  {
+    id: "dodge-game",
+    title: "Dodge - Indie Java Game",
+    description:
+      "Reaction-time training game built in Java with object-oriented design principles.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/dodge.png",
+    type: "personal",
+    date: "2021",
+    technologies: ["Java", "Game Development", "OOP"],
+    githubLink: "https://github.com/khalidhersi/Dodge--java",
+    demoLink: "https://github.com/khalidhersi/Dodge--java",
+  },
+  {
+    id: "tic-tac-toe",
+    title: "Tic-Tac-Toe React",
+    description:
+      "Modern React implementation of the classic game using the latest React.JS features and hooks.",
+    image:
+      "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/tic-tac-toe.png",
+    type: "personal",
+    date: "2022",
+    technologies: ["React", "Hooks", "Game Logic"],
+    githubLink: "https://github.com/khalidhersi/tic-tac-toe",
+    demoLink: "https://github.com/khalidhersi/tic-tac-toe",
+  },
+];
 
 const Carousel = () => {
-  const [counter, setCounter] = useState(0);
-  const [showText, setShowText] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedType, setSelectedType] =
+    useState("all");
 
-  const handleIncrement = () => {
-    if (counter === projectInfoArr.length - 1) {
-      setCounter(0);
-    } else {
-      setCounter(counter + 1);
-    }
-  };
-
-  const handleDecrement = () => {
-    if (counter === 0) {
-      setCounter(projectInfoArr.length - 1);
-    } else {
-      setCounter(counter - 1);
-    }
-  };
-
-  const handleClick = () => {
-    setShowText(!showText);
-  };
-
-  const projectInfoArr = [
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/Calculator.png",
-      title: "Iphone Calculator clone",
-      description:
-        "This is a Iphone Calculator clone I made using vanilla JavaScript. Using DOM manipulation i was able to create a fully functioning calculator that handles basic arithmetic.",
-      GithubLink: "https://khalidhersi.github.io/Calculator/",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/minesweeper.png",
-      title: "MineSweeper clone",
-      description:
-        "I made a MineSweeper clone using vanilla JavaScript. It cointains a Timeer that counts down and ends the game at 0; the game also ends when a bomb is clicked just like the original MineSweeper game.",
-      GithubLink: "https://khalidhersi.github.io/MineSweeper/",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/morsecode.png",
-      title: "Morse Code Translator",
-      description:
-        "This is a morse Code Translator I made using the test first unit testing approach. I tested using jest allowing me to expect results of the morse code translator function.",
-      GithubLink: "https://khalidhersi.github.io/Morse-code-translator/",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/ear-worm.png",
-      title: "Ear Worm React App",
-      description:
-        "This is the first React App I made during a code along in the _nology boot camp. It has Search functionality and a working carousel that lisrts all the Beatles Albums.",
-      GithubLink: "https://github.com/khalidhersi/react-code-along",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/ticket-tracker.png",
-      title: "Ticket Tracker",
-      description:
-        "After learning how to immplament the state hook in react, I was able to create a simple Ticket Tracker that has the added bonus of being able to map over a data file of employees and return info on of all the employees in the company.",
-      GithubLink: "https://khalidhersi.github.io/ticket-tracker-v2/",
-    },
-    {
-      image: "https://raw.githubusercontent.com/khalidhersi/punk-api-v2/main/src/assets/images/mobile-view.png",
-      title: "Punk API",
-      description: "This is a React App that collects data from the Punk API using the fetch(). It displays all the beers availble along with their descriptions and other info. Using .filter to filter the api arrays to search for different beers.",
-      GithubLink: "https://khalidhersi.github.io/punk-api-v2/"
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/client-project.png",
-      title: "Orchestra of the Age of Enlightenment: Client Project",
-      description:
-        'This is a client project for the "Orchestra of the Age of Enlightenment". Working in an agile team, my team worked on the frontend; creating a react app using mobile first design to produce an amazing UI.',
-      GithubLink: "https://nology-tech.github.io/oae-event-programme/6/home",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/fullstack-project.png",
-      title: "Full-Stack Project: Vue Clone",
-      description:
-        "This fullstack project works using a Spring BootJava Backend & a React Frontend. It is a Vue Cinema Clone, holding a list of movies and thier information on the server.",
-      GithubLink: "https://khalidhersi.github.io/React-FrontEnd/",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/librarySystem.png",
-      title: "Java Console Library Booking System",
-      description:
-        "A Java Console Project for Borrowing Books in a library and displaying relavent Book data to the console. I used the provided .CSV file as a data source and extrated all the data to be able to be listed in the console.",
-      GithubLink:
-        "https://github.com/khalidhersi/Library-Book-Loaning-System-Java",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/ad2857e4b0aeea02c9376db42fe17794900cae2c/src/assets/images/wordle.png",
-      title: "Wordle Clone",
-      description:
-        "This a Wordle Clone I created using React. This game works using multiple state hooks to determine whether the letters you enter are the same as the hidden word.",
-      GithubLink: "https://khalidhersi.github.io/wordle/",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/dodge.png",
-      title: "Dodge: My Indie Java Game",
-      description:
-        "Dodge is a game I created to test out my Java skills. The game works to train your reaction time by dodging differnt shaped objects. Try it out! ",
-      GithubLink: "https://github.com/khalidhersi/Dodge--java",
-    },
-    {
-      image: "https://raw.githubusercontent.com/khalidhersi/vscodefolio/master/src/assets/images/tic-tac-toe.png",
-      title: "Tic-Tac-Toe React",
-      description:
-        "This project was made uses the latest version of React.JS. State Hooks were used to control naughts and crooses being drawn onto the page.",
-      GithubLink: "https://github.com/khalidhersi/tic-tac-toe",
-    },
-  ];
-
-  const buttonJSX = (
-    <div className="carousel__content carousel__content--button">
-      <div
-        className="carousel__content--button__container"
-        onClick={handleClick}
-      >
-        <Button buttonText={"Find out more"} isSecondary={true} />
-      </div>
-    </div>
+  const filtered = useMemo(
+    () => projects.filter((p) => selectedType === "all" || p.type === selectedType),
+    [selectedType]
   );
 
-  const textJSX = (
-    <div className="carousel__content carousel__content--text">
-      <img
-        src={whiteCross}
-        className="carousel__content__cross"
-        onClick={handleClick}
-        alt="Close text"
-      />
-      <h3 className="carousel__content--text__heading">
-        {data[counter].title}
-      </h3>
-      <a href={data[counter].GithubLink} target="_blank">
-        <Button buttonText={"Demo"} isSecondary={false} />
-      </a>
-      <p className="carousel__content--text__description">
-        {data[counter].description}
-      </p>
-    </div>
-  );
+  const hasItems = filtered.length > 0;
+  const current = hasItems ? filtered[currentIndex] : null;
+
+  const next = () => setCurrentIndex((i) => (i + 1) % Math.max(filtered.length, 1));
+  const prev = () =>
+    setCurrentIndex((i) => (i - 1 + Math.max(filtered.length, 1)) % Math.max(filtered.length, 1));
+
+  // Reset index when filter changes
+  useEffect(() => setCurrentIndex(0), [selectedType]);
+
+  // Keyboard nav (←/→)
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [filtered.length]);
+
+  // Touch swipe (mobile)
+  const [touchX, setTouchX] = useState(null);
+  const onTouchStart = (e) => setTouchX(e.touches[0].clientX);
+  const onTouchEnd = (e) => {
+    if (touchX == null) return;
+    const delta = e.changedTouches[0].clientX - touchX;
+    const threshold = 40; // swipe threshold
+    if (delta > threshold) prev();
+    if (delta < -threshold) next();
+    setTouchX(null);
+  };
+
+  if (!hasItems || !current) return null;
 
   return (
-    <section className="carousel__container">
-      <div className="carousel">
-        <img
-          src={leftArrow}
-          alt="left arrow"
-          onClick={handleDecrement}
-          className="carousel__arrow carousel__arrow--left"
-        />
-        <img
-          src={data[counter].image}
-          alt="project image"
-          className="carousel__image"
-        />
-        {showText ? textJSX : buttonJSX}
-        <img
-          src={rightArrow}
-          alt="right arrow"
-          onClick={handleIncrement}
-          className="carousel__arrow carousel__arrow--right"
-        />
+    <section
+      className="project-carousel"
+      aria-label="Project carousel"
+      role="region"
+      aria-roledescription="carousel"
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* Filters */}
+      <div className="project-carousel__filters" role="tablist" aria-label="Filter projects">
+        {(["all", "professional", "personal"]).map((type) => (
+          <button
+            key={type}
+            className={`pc-btn ${selectedType === type ? "btn--active" : ""}`}
+            onClick={() => setSelectedType(type)}
+            type="button"
+            role="tab"
+            aria-selected={selectedType === type}
+          >
+            {type[0].toUpperCase() + type.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Card */}
+      <div className="project-carousel__card">
+        <div className="project-carousel__grid">
+          {/* Image side */}
+          <div className="project-carousel__image-section">
+            <img
+              src={current.image}
+              alt={current.title}
+              loading="lazy"
+              sizes="(max-width: 640px) 92vw, (max-width: 1024px) 50vw, 550px"
+            />
+            <div
+              className={`project-carousel__type-badge ${
+                current.type === "professional"
+                  ? "project-carousel__type-badge--professional"
+                  : "project-carousel__type-badge--personal"
+              }`}
+            >
+              {current.type === "professional" ? "Professional" : "Personal"}
+            </div>
+
+            <button
+              className="project-carousel__nav-button project-carousel__nav-button--prev"
+              onClick={prev}
+              aria-label="Previous project"
+              type="button"
+            >
+              <img src={leftArrow} alt="" aria-hidden="true" />
+            </button>
+
+            <button
+              className="project-carousel__nav-button project-carousel__nav-button--next"
+              onClick={next}
+              aria-label="Next project"
+              type="button"
+            >
+              <img src={rightArrow} alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          {/* Content side */}
+          <div className="project-carousel__content-section">
+            <div>
+              <div className="project-carousel__meta">
+                <span>{current.date}</span>
+                {current.company && <span>• {current.company}</span>}
+              </div>
+
+              <h3 className="project-carousel__title">{current.title}</h3>
+
+              <p className="project-carousel__description">{current.description}</p>
+
+              {current.impact && (
+                <div className="project-carousel__impact">
+                  <div className="project-carousel__impact-title">Impact</div>
+                  <div className="project-carousel__impact-text">{current.impact}</div>
+                </div>
+              )}
+
+              <div className="project-carousel__technologies">
+                <div className="project-carousel__technologies-title">Technologies Used</div>
+                <div className="project-carousel__technologies-list">
+                  {current.technologies.map((t) => (
+                    <span key={t} className="badge">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="project-carousel__actions">
+              {current.demoLink && (
+                <a href={current.demoLink} target="_blank" rel="noreferrer">
+                  <Button buttonText="Live Demo" isSecondary={false} />
+                </a>
+              )}
+              {current.githubLink && (
+                <a href={current.githubLink} target="_blank" rel="noreferrer">
+                  <Button buttonText="View Code" isSecondary={true} />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Indicators */}
+      <div className="project-carousel__indicators" aria-live="polite">
+        <div className="project-carousel__indicators-dots">
+          {filtered.map((_, idx) => (
+            <button
+              key={idx}
+              type="button"
+              onClick={() => setCurrentIndex(idx)}
+              className={`project-carousel__indicators-dot ${
+                idx === currentIndex ? "project-carousel__indicators-dot--active" : ""
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+              aria-current={idx === currentIndex ? "true" : undefined}
+            />
+          ))}
+        </div>
+        <div className="project-carousel__indicators-counter">
+          {Math.min(currentIndex + 1, filtered.length)} of {filtered.length} projects
+        </div>
       </div>
     </section>
   );

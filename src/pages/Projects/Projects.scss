@@ -2,55 +2,30 @@
 @import "../../assets/styles/typography";
 
 .projects {
-  position: relative;
-  top: 2rem;
+  /* mobile viewport-safe full-height centering */
+  min-height: 100svh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  &__header {
+  padding-block: max(24px, env(safe-area-inset-top)) max(32px, env(safe-area-inset-bottom));
+  padding-inline: clamp(12px, 4vw, 32px);
+
+  &__inner {
+    width: min(1100px, 100%);
+    margin-inline: auto;
     display: flex;
-    justify-content: center;
-    margin-left: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(16px, 3vw, 28px);
+  }
+
+  &__title {
     color: $accent-color;
     text-align: center;
-    margin-bottom: 0rem;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .projects {
-    position: relative;
-    top: 3.5rem;
-    right: 0.5em;
-    &__header {
-      position: relative;
-      bottom: 0.5em;
-      font-size: 3.5rem;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (min-width: 520px) {
-  .projects {
-    position: relative;
-    top: 4rem;
-    &__header {
-      font-size: 4.3rem;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .projects {
-    position: relative;
-    top: 4rem;
-    &__header {
-      font-size: 6rem;
-      position: relative;
-      bottom: 2rem;
-    }
+    font-weight: 800;
+    letter-spacing: .3px;
+    line-height: 0;
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    margin: 3.3rem 0 0 0;
   }
 }

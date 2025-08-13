@@ -1,0 +1,47 @@
+// Card Variables
+$card-bg: #ffffff;
+$card-border: #e2e8f0;
+$card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$text-color: #1a202c;
+$text-muted: #718096;
+
+.card {
+  border-radius: 8px;
+  border: 1px solid $card-border;
+  background-color: $card-bg;
+  color: $text-color;
+  box-shadow: $card-shadow;
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 24px;
+  }
+  
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  
+  &__description {
+    font-size: 14px;
+    color: $text-muted;
+    margin: 0;
+  }
+  
+  &__content {
+    padding: 24px;
+    padding-top: 0;
+  }
+  
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    padding-top: 0;
+  }
+}
