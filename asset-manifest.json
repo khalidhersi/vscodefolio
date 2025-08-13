@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/vscodefolio/static/css/main.2310c935.css",
-    "main.js": "/vscodefolio/static/js/main.083cf111.js",
-    "static/js/845.a3d02275.chunk.js": "/vscodefolio/static/js/845.a3d02275.chunk.js",
-    "static/js/787.a59168ce.chunk.js": "/vscodefolio/static/js/787.a59168ce.chunk.js",
+    "main.css": "/vscodefolio/static/css/main.035208a6.css",
+    "main.js": "/vscodefolio/static/js/main.b126ce71.js",
+    "static/js/885.a1546187.chunk.js": "/vscodefolio/static/js/885.a1546187.chunk.js",
+    "static/js/453.468fc17b.chunk.js": "/vscodefolio/static/js/453.468fc17b.chunk.js",
     "static/media/melody.wav": "/vscodefolio/static/media/melody.ad45d3897813e08db0a8.wav",
+    "static/media/jqc.png": "/vscodefolio/static/media/jqc.447d2d63ab94587c9b01.png",
+    "static/media/atc.png": "/vscodefolio/static/media/atc.a63b664af97fc5d581cd.png",
     "static/media/PageNotFound.png": "/vscodefolio/static/media/PageNotFound.d2d35bd19f77536a3cc1.png",
+    "static/media/searchsmarterlogo.png": "/vscodefolio/static/media/searchsmarterlogo.ad57f1c939294c245815.png",
+    "static/media/OAE.png": "/vscodefolio/static/media/OAE.b16763d09c6bb8a72704.png",
+    "static/media/quranapp.png": "/vscodefolio/static/media/quranapp.89096f05480ccf92c319.png",
+    "static/media/dfeLogo.png": "/vscodefolio/static/media/dfeLogo.41ca23fe8ec36c296f06.png",
     "index.html": "/vscodefolio/index.html",
-    "main.2310c935.css.map": "/vscodefolio/static/css/main.2310c935.css.map",
-    "main.083cf111.js.map": "/vscodefolio/static/js/main.083cf111.js.map",
-    "845.a3d02275.chunk.js.map": "/vscodefolio/static/js/845.a3d02275.chunk.js.map",
-    "787.a59168ce.chunk.js.map": "/vscodefolio/static/js/787.a59168ce.chunk.js.map"
+    "main.035208a6.css.map": "/vscodefolio/static/css/main.035208a6.css.map",
+    "main.b126ce71.js.map": "/vscodefolio/static/js/main.b126ce71.js.map",
+    "885.a1546187.chunk.js.map": "/vscodefolio/static/js/885.a1546187.chunk.js.map",
+    "453.468fc17b.chunk.js.map": "/vscodefolio/static/js/453.468fc17b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2310c935.css",
-    "static/js/main.083cf111.js"
+    "static/css/main.035208a6.css",
+    "static/js/main.b126ce71.js"
   ]
 }
